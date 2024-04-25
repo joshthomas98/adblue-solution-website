@@ -271,3 +271,24 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+/* SOCIAL ICONS */
+
+.footer_profile {
+  display: flex;
+}
+
+.social-icons {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}

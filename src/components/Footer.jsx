@@ -1,7 +1,11 @@
 import React from "react";
 import SocialMediaIcons from "./SocialMediaIcons";
+import { Center } from "@chakra-ui/react";
 
 const Footer = () => {
+  // Get current year
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <footer className="footer_area section_padding_130_0">
@@ -11,26 +15,32 @@ const Footer = () => {
             <div className="col-12 col-sm-6 col-lg-4">
               <div className="single-footer-widget section_padding_0_130">
                 {/* Footer Logo*/}
-                <div className="footer-logo" />
-                <p>
-                  Appland is completely creative, lightweight, clean app landing
-                  page.
-                </p>
+                <Center>
+                  <div className="footer-logo" />
+                  <img
+                    src="src/assets/LOGO WHITE NO BG.png"
+                    alt="LOGO"
+                    className="w-75 mt-2 mx-3 mb-4"
+                  />
+                </Center>
                 {/* Copywrite Text*/}
-                <div className="copywrite-text mb-5">
-                  <p className="mb-0">
-                    Made with <i className="lni-heart mr-1" />
-                    by
-                    <a
-                      className="ml-1"
-                      href="https://wrapbootstrap.com/user/DesigningWorld"
-                    >
-                      Designing World
-                    </a>
-                  </p>
-                </div>
+                <Center>
+                  <div className="copywrite-text mb-5 mt-3">
+                    <p className="mb-0">
+                      Designed and built by <i className="lni-heart mr-1" />
+                      <a
+                        className="ml-1"
+                        href="https://wrapbootstrap.com/user/DesigningWorld"
+                      >
+                        Tech Minds Consulting
+                      </a>
+                    </p>
+                  </div>
+                </Center>
                 {/* Footer Social Area*/}
-                <SocialMediaIcons />
+                <Center>
+                  <SocialMediaIcons />
+                </Center>
               </div>
             </div>
             {/* Single Widget*/}
@@ -107,6 +117,16 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        {/* Copyright */}
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <p className="text-center mt-4">
+                &copy; {currentYear} AdBlue Solution. All rights reserved.
+              </p>
             </div>
           </div>
         </div>
