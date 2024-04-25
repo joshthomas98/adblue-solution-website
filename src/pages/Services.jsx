@@ -11,7 +11,7 @@ const Services = () => {
               <div className="section-title">
                 <h2>
                   <span style={{ color: "#20257B" }}>It's {""}</span>
-                  <span className="text-success">What We Do</span>
+                  <span className="text-danger">What We Do</span>
                 </h2>
                 <p>
                   Here are the services we offer at AdBlue Solution to enhance

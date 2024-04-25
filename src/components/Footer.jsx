@@ -25,7 +25,7 @@ const Footer = () => {
                 </Center>
                 {/* Copywrite Text*/}
                 <Center>
-                  <div className="copywrite-text mb-5 mt-3">
+                  <div className="copywrite-text mb-5 mt-3 text-center">
                     <p className="mb-0">
                       Designed and built by <i className="lni-heart mr-1" />
                       <a
@@ -44,7 +44,7 @@ const Footer = () => {
               </div>
             </div>
             {/* Single Widget*/}
-            <div className="col-12 col-sm-6 col-lg">
+            <div className="col-12 col-sm-12 col-lg py-sm-4">
               <div className="single-footer-widget section_padding_0_130">
                 {/* Widget Title*/}
                 <h5 className="widget-title">About</h5>
@@ -68,7 +68,7 @@ const Footer = () => {
               </div>
             </div>
             {/* Single Widget*/}
-            <div className="col-12 col-sm-6 col-lg">
+            <div className="col-12 col-sm-12 col-lg py-sm-4">
               <div className="single-footer-widget section_padding_0_130">
                 {/* Widget Title*/}
                 <h5 className="widget-title">Support</h5>
@@ -95,7 +95,7 @@ const Footer = () => {
               </div>
             </div>
             {/* Single Widget*/}
-            <div className="col-12 col-sm-6 col-lg">
+            <div className="col-12 col-sm-12 col-lg py-sm-4">
               <div className="single-footer-widget section_padding_0_130">
                 {/* Widget Title*/}
                 <h5 className="widget-title">Contact</h5>
