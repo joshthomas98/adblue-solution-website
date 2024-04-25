@@ -6,6 +6,7 @@ import NavbarComponent from "./components/Navbar";
 import Services from "./pages/Services";
 import Footer from "./components/Footer";
 import SocialMediaIcons from "./components/SocialMediaIcons";
+import Contact from "./pages/Contact";
 
 // import Footer from "./components/Footer";
 
@@ -19,6 +20,8 @@ const App = () => {
         <Route path="/services" element={<Services />} />
 
         <Route path="/socialmediaicons" element={<SocialMediaIcons />} />
+
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

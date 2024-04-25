@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="footer_area section_padding_130_0">
+      <footer className="footer_area section_padding_130_0 mt-5">
         <div className="container">
           <div className="row">
             {/* Single Widget*/}
@@ -20,7 +20,7 @@ const Footer = () => {
                   <img
                     src="src/assets/LOGO WHITE NO BG.png"
                     alt="LOGO"
-                    className="w-75 mt-2 mx-3 mb-4"
+                    className="w-75 mt-3 mx-3 mb-4"
                   />
                 </Center>
                 {/* Copywrite Text*/}

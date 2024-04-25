@@ -40,11 +40,11 @@ function NavbarComponent() {
               Services
             </Nav.Link>
 
-            <Nav.Link href="#about" style={linkStyle}>
+            <Nav.Link href="/about" style={linkStyle}>
               About
             </Nav.Link>
 
-            <Nav.Link href="#contact" style={linkStyle}>
+            <Nav.Link href="/contact" style={linkStyle}>
               Contact
             </Nav.Link>
           </Nav>
