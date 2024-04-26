@@ -97,6 +97,13 @@ const Services = () => {
         "ECU cloning involves copying the software and data from one ECU to another, typically for purposes such as engine swaps or replacements. It ensures that the replacement ECU has the same programming and configuration as the original.",
       iconClass: "fas fa-copy",
     },
+    {
+      id: 12,
+      name: "Need Help?",
+      shortDescription:
+        "Got a question about any of our services? Contact us here.",
+      iconClass: "fas fa-question-circle",
+    },
   ];
 
   return (
@@ -119,20 +126,29 @@ const Services = () => {
                   <div className="icon">
                     <i
                       className={service.iconClass}
-                      style={{ color: "#20257B" }}
+                      style={{
+                        color: "#20257B",
+                        paddingRight: "5px",
+                        paddingLeft: "5px",
+                      }}
                     />
                   </div>
                   <div className="feature-content px-2 py-1">
                     <h5>{service.name}</h5>
                     <p className="pb-1">{service.shortDescription}</p>
-                    <Link
-                      to={{
-                        pathname: `/individual-service/${service.id}`,
-                        state: { service: service.description },
-                      }}
-                    >
-                      Learn More
-                    </Link>
+                    {/* Conditionally render Link for the "Need Help?" service */}
+                    {service.id === 12 ? (
+                      <Link to="/contact">Learn More</Link>
+                    ) : (
+                      <Link
+                        to={{
+                          pathname: `/individual-service/${service.id}`,
+                          state: { service: service.description },
+                        }}
+                      >
+                        Learn More
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>
