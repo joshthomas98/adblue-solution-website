@@ -81,6 +81,7 @@ const About = () => {
                 src="/src/assets/Can man  habd on hip and thumbs up good hand black background.png"
                 className="img-fluid"
                 alt=""
+                style={{ marginLeft: "12px" }}
               />
             </div>
           </div>

@@ -9,6 +9,7 @@ import SocialMediaIcons from "./components/SocialMediaIcons";
 import Contact from "./pages/Contact";
 import MessageSent from "./pages/MessageSent";
 import About from "./pages/About";
+import IndividualService from "./pages/IndividualService";
 
 // import Footer from "./components/Footer";
 
@@ -28,6 +29,8 @@ const App = () => {
         <Route path="/messagesent" element={<MessageSent />} />
 
         <Route path="/about" element={<About />} />
+
+        <Route path="/individual-service/:id" element={<IndividualService />} />
       </Routes>
       <Footer />
     </Router>
