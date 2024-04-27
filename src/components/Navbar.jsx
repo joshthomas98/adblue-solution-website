@@ -18,14 +18,24 @@ function NavbarComponent() {
   return (
     <div className="px-5">
       <Navbar collapseOnSelect expand="lg">
-        <Navbar.Brand href="/">
-          <img
-            src="src/assets/LOGO WHITE NO BG.png"
-            alt="LOGO"
-            className="w-25 mt-2 mx-3"
-          />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        {/* Add custom class for xs, sm, and md screen sizes */}
+        <div className="pt-xs-sm-md-only">
+          <Navbar.Brand href="/">
+            <img
+              src="src/assets/LOGO WHITE NO BG.png"
+              alt="LOGO"
+              className="w-25 mx-3 pb-lg-2"
+            />
+          </Navbar.Brand>
+        </div>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          style={{
+            marginLeft: "auto",
+            marginTop: "-40px",
+            marginBottom: "10px",
+          }}
+        />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">
             <Nav.Link href="/" style={linkStyle}>

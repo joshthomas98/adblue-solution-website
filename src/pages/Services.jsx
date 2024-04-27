@@ -143,7 +143,7 @@ const Services = () => {
                       <Link
                         to={{
                           pathname: `/individual-service/${service.id}`,
-                          state: { service: service.description },
+                          state: { service: servicesData },
                         }}
                       >
                         Learn More
