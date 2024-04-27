@@ -1,40 +1,34 @@
-import React, { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useParams } from "react-router-dom";
+import { useServices } from "../context/ServicesContext";
 
 const IndividualService = () => {
-  const location = useLocation();
   const { id } = useParams();
-  const { state } = location;
-  const servicesData = state && state.service;
-  const [service, setService] = useState(null);
+  const servicesData = useServices();
 
-  useEffect(() => {
-    // Find the service data based on the ID
-    const selectedService = servicesData.find(
-      (item) => item.id === parseInt(id)
-    );
-    setService(selectedService);
-  }, [id, servicesData]);
+  // Find the service with the matching id
+  const service = servicesData.find((service) => service.id === parseInt(id));
 
-  // Function to render service details
-  const renderServiceDetails = () => {
-    if (!service) return null;
+  // Check if service is found
+  if (!service) {
+    return <div>Service not found</div>;
+  }
 
-    return (
-      <Container>
-        <Row>
-          <Col>
-            <h2>{service.name}</h2>
-            <p>{service.description}</p>
-            {/* Add more detailed information about the service */}
-          </Col>
-        </Row>
-      </Container>
-    );
-  };
+  // Destructure service properties
+  const { name, description } = service;
 
-  return <div>{renderServiceDetails()}</div>;
+  return (
+    <Container>
+      <Row>
+        <Col>
+          <h2>{name}</h2>
+          <p>{description}</p>
+          {/* Add more detailed information about the service */}
+        </Col>
+      </Row>
+    </Container>
+  );
 };
 
 export default IndividualService;
