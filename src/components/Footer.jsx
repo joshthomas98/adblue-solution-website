@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             {/* Single Widget*/}
-            <div className="col-12 col-sm-6 col-lg-4">
+            <div className="col-12 col-sm-12 col-lg-4">
               <div className="single-footer-widget section_padding_0_130">
                 {/* Footer Logo*/}
                 <Center>
@@ -38,7 +38,7 @@ const Footer = () => {
                   </div>
                 </Center>
                 {/* Footer Social Area*/}
-                <Center>
+                <Center className="pb-4">
                   <SocialMediaIcons />
                 </Center>
               </div>
@@ -47,9 +47,9 @@ const Footer = () => {
             <div className="col-12 col-sm-12 col-lg py-sm-4">
               <div className="single-footer-widget section_padding_0_130">
                 {/* Widget Title*/}
-                <h5 className="widget-title">About</h5>
+                <h5 className="widget-title text-center text-sm-left">About</h5>
                 {/* Footer Menu*/}
-                <div className="footer_menu">
+                <div className="footer_menu text-center text-sm-left">
                   <ul>
                     <li>
                       <a href="#">About Us</a>
@@ -71,9 +71,11 @@ const Footer = () => {
             <div className="col-12 col-sm-12 col-lg py-sm-4">
               <div className="single-footer-widget section_padding_0_130">
                 {/* Widget Title*/}
-                <h5 className="widget-title">Support</h5>
+                <h5 className="widget-title text-center text-sm-left">
+                  Support
+                </h5>
                 {/* Footer Menu*/}
-                <div className="footer_menu">
+                <div className="footer_menu text-center text-sm-left">
                   <ul>
                     <li>
                       <a href="#">Help</a>
@@ -98,9 +100,11 @@ const Footer = () => {
             <div className="col-12 col-sm-12 col-lg py-sm-4">
               <div className="single-footer-widget section_padding_0_130">
                 {/* Widget Title*/}
-                <h5 className="widget-title">Contact</h5>
+                <h5 className="widget-title text-center text-sm-left">
+                  Contact
+                </h5>
                 {/* Footer Menu*/}
-                <div className="footer_menu">
+                <div className="footer_menu text-center text-sm-left">
                   <ul>
                     <li>
                       <a href="#">Call Centre</a>
