@@ -10,6 +10,9 @@ import Contact from "./pages/Contact";
 import MessageSent from "./pages/MessageSent";
 import About from "./pages/About";
 import IndividualService from "./pages/IndividualService";
+import ReviewForm from "./pages/ReviewForm";
+import ReviewsList from "./pages/ReviewsList";
+import ReviewSubmitted from "./pages/ReviewSubmitted";
 
 const App = () => {
   return (
@@ -32,6 +35,15 @@ const App = () => {
           <Route
             path="/individual-service/:id"
             element={<IndividualService />}
+          />
+
+          <Route path="/reviewform" element={<ReviewForm />} />
+
+          <Route path="/reviewslist" element={<ReviewsList />} />
+
+          <Route
+            path="/reviewsubmittedsuccessfully"
+            element={<ReviewSubmitted />}
           />
         </Routes>
         <Footer />
