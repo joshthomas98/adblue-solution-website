@@ -48,17 +48,55 @@ const ReviewsList = () => {
 
         <ListGroup>
           {reviews.map((review, index) => (
-            <ListGroup.Item key={index}>
-              <strong>{review.name}</strong>
-              <br />
-              <strong>Location:</strong> {review.location}
-              <br />
-              <strong>Rating:</strong> {review.rating}
-              <br />
-              <strong>Review:</strong> {review.review}
-              <br />
-              <strong>Created At:</strong>{" "}
-              {new Date(review.createdAt).toLocaleString()}
+            <ListGroup.Item key={index} className="d-flex align-items-center">
+              <div className="circle-image">{review.name[0]}</div>
+              <div className="review-details ms-3">
+                <strong
+                  style={{
+                    marginBottom: "0.5rem",
+                    display: "block",
+                    backgroundColor: "white",
+                  }}
+                >
+                  {review.name}
+                </strong>
+                <p
+                  style={{
+                    marginBottom: "0.5rem",
+                    display: "block",
+                    backgroundColor: "white",
+                  }}
+                >
+                  Location: {review.location}
+                </p>
+                <p
+                  style={{
+                    marginBottom: "0.5rem",
+                    display: "block",
+                    backgroundColor: "white",
+                  }}
+                >
+                  Rating: {review.rating}
+                </p>
+                <p
+                  style={{
+                    marginBottom: "0.5rem",
+                    display: "block",
+                    backgroundColor: "white",
+                  }}
+                >
+                  Review: {review.review}
+                </p>
+                <p
+                  style={{
+                    marginBottom: "0.5rem",
+                    display: "block",
+                    backgroundColor: "white",
+                  }}
+                >
+                  Created At: {new Date(review.createdAt).toLocaleString()}
+                </p>
+              </div>
             </ListGroup.Item>
           ))}
         </ListGroup>
