@@ -13,6 +13,7 @@ import IndividualService from "./pages/IndividualService";
 import ReviewForm from "./pages/ReviewForm";
 import ReviewsList from "./pages/ReviewsList";
 import ReviewSubmitted from "./pages/ReviewSubmitted";
+import DarkVariantExample from "./components/Carousel";
 
 const App = () => {
   return (
@@ -45,6 +46,8 @@ const App = () => {
             path="/reviewsubmittedsuccessfully"
             element={<ReviewSubmitted />}
           />
+
+          <Route path="/carousel" element={<DarkVariantExample />} />
         </Routes>
         <Footer />
       </ServicesProvider>
