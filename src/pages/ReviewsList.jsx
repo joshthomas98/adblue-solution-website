@@ -24,10 +24,12 @@ const ReviewsList = () => {
       <Container>
         <div className="row">
           <div className="col-md-6">
-            <h2 className="pt-4 pb-3">See What Our Customers Had To Say</h2>
+            <h2 className="pt-4 pb-3 myfont" style={{ fontSize: "2rem" }}>
+              See What Our Customers Had To Say
+            </h2>
           </div>
           <div className="col-md-6 d-flex justify-content-end align-items-center">
-            <Button>Write Review</Button>
+            <Button href="/reviewform">Write Review</Button>
           </div>
         </div>
 
@@ -38,21 +40,16 @@ const ReviewsList = () => {
               Most Recent
             </div>
             <div className="border btn btn-light rounded-pill me-1">
-              Most Recent
+              Highest
             </div>
-            <div className="border btn btn-light rounded-pill me-1">
-              Most Recent
-            </div>
-            <div className="border btn btn-light rounded-pill me-1">
-              Most Recent
-            </div>
+            <div className="border btn btn-light rounded-pill me-1">Lowest</div>
           </div>
         </div>
 
         <ListGroup>
           {reviews.map((review, index) => (
             <ListGroup.Item key={index}>
-              <strong>Name:</strong> {review.name}
+              <strong>{review.name}</strong>
               <br />
               <strong>Location:</strong> {review.location}
               <br />
