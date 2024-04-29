@@ -11,7 +11,6 @@ const ReviewForm = () => {
 
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
-  const [rating, setRating] = useState(0);
   const [review, setReview] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [selectedRating, setSelectedRating] = useState(0);
@@ -25,7 +24,7 @@ const ReviewForm = () => {
     const newReview = {
       name: name,
       location: location,
-      rating: rating,
+      rating: selectedRating, // Use selectedRating directly here
       review: review,
       createdAt: Date.now(),
     };
@@ -37,7 +36,7 @@ const ReviewForm = () => {
         // Reset form fields
         setName("");
         setLocation("");
-        setRating(0);
+        setSelectedRating(0); // Reset selectedRating
         setReview("");
         // Navigate to the success page after successful submission
         navigate("/reviewsubmittedsuccessfully");
