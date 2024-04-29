@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ref, onValue } from "firebase/database";
 import { database } from "../Firebase";
-import { Container, ListGroup } from "react-bootstrap";
+import { Button, Container, ListGroup } from "react-bootstrap";
 
 const ReviewsList = () => {
   const [reviews, setReviews] = useState([]);
@@ -22,7 +22,33 @@ const ReviewsList = () => {
   return (
     <div>
       <Container>
-        <h2 className="pt-4 pb-3">Reviews List</h2>
+        <div className="row">
+          <div className="col-md-6">
+            <h2 className="pt-4 pb-3">See What Our Customers Had To Say</h2>
+          </div>
+          <div className="col-md-6 d-flex justify-content-end align-items-center">
+            <Button>Write Review</Button>
+          </div>
+        </div>
+
+        <div className="d-flex align-items-center pb-4">
+          <p className="m-0 me-2">Sort by:</p>
+          <div className="sort-by-buttons">
+            <div className="border btn btn-light rounded-pill me-1">
+              Most Recent
+            </div>
+            <div className="border btn btn-light rounded-pill me-1">
+              Most Recent
+            </div>
+            <div className="border btn btn-light rounded-pill me-1">
+              Most Recent
+            </div>
+            <div className="border btn btn-light rounded-pill me-1">
+              Most Recent
+            </div>
+          </div>
+        </div>
+
         <ListGroup>
           {reviews.map((review, index) => (
             <ListGroup.Item key={index}>

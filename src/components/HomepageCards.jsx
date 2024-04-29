@@ -2,75 +2,105 @@ import React from "react";
 
 const HomepageCards = () => {
   return (
-    <>
+    <section
+      id="venue-functionality_boxes"
+      className="p-5 text-light"
+      style={{ backgroundColor: "#1D1D1C" }}
+    >
       <div className="container">
         <div className="row text-center g-4">
           <div className="col-md">
-            <div className="card text-dark">
-              {" "}
-              {/* Remove bg-dark class */}
-              <div className="card-body text-center">
+            <div
+              className="homepage-card mb-4"
+              style={{ backgroundColor: "#373737" }}
+            >
+              <div
+                className="card-body text-center p-3"
+                style={{ backgroundColor: "#373737" }}
+              >
                 <div className="h1 mb-3">
-                  <i className="bi bi-laptop" />
+                  <i className="bi bi-search"></i>
                 </div>
-                <h3 className="card-title mb-3">Virtual</h3>
-                <p className="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Iure, quas quidem possimus dolorum esse eligendi?
+                <h3
+                  className="card-title mb-3"
+                  style={{ backgroundColor: "#373737" }}
+                >
+                  Book Your Acts
+                </h3>
+                <p className="card-text" style={{ backgroundColor: "#373737" }}>
+                  Ready for live music? Discover a varied artist lineup for your
+                  venue. Filter by genre, location, and availability to find
+                  exact matches for your requirements.
                 </p>
-                <a href="#" className="btn btn-primary">
-                  {" "}
-                  {/* Change btn-primary to btn-dark */}
-                  Read More
-                </a>
+                <button className="btn btn-primary text-light my-2">
+                  Book Artists
+                </button>
               </div>
             </div>
           </div>
+
           <div className="col-md">
-            <div className="card text-dark">
-              {" "}
-              {/* Remove bg-secondary class */}
-              <div className="card-body text-center">
+            <div
+              className="homepage-card"
+              style={{ backgroundColor: "#373737" }}
+            >
+              <div
+                className="card-body text-center p-3"
+                style={{ backgroundColor: "#373737" }}
+              >
                 <div className="h1 mb-3">
-                  <i className="bi bi-person-square" />
+                  <i className="bi bi-search"></i>
                 </div>
-                <h3 className="card-title mb-3">Hybrid</h3>
-                <p className="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Iure, quas quidem possimus dolorum esse eligendi?
+                <h3
+                  className="card-title mb-3"
+                  style={{ backgroundColor: "#373737" }}
+                >
+                  Book Your Acts
+                </h3>
+                <p className="card-text" style={{ backgroundColor: "#373737" }}>
+                  Ready for live music? Discover a varied artist lineup for your
+                  venue. Filter by genre, location, and availability to find
+                  exact matches for your requirements.
                 </p>
-                <a href="#" className="btn btn-light">
-                  {" "}
-                  {/* Change btn-dark to btn-light */}
-                  Read More
-                </a>
+                <button className="btn btn-primary text-light my-2">
+                  Book Artists
+                </button>
               </div>
             </div>
           </div>
+
           <div className="col-md">
-            <div className="card text-dark">
-              {" "}
-              {/* Remove bg-dark class */}
-              <div className="card-body text-center">
+            <div
+              className="homepage-card"
+              style={{ backgroundColor: "#373737" }}
+            >
+              <div
+                className="card-body text-center p-3"
+                style={{ backgroundColor: "#373737" }}
+              >
                 <div className="h1 mb-3">
-                  <i className="bi bi-people" />
+                  <i className="bi bi-search"></i>
                 </div>
-                <h3 className="card-title mb-3">In Person</h3>
-                <p className="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Iure, quas quidem possimus dolorum esse eligendi?
+                <h3
+                  className="card-title mb-3"
+                  style={{ backgroundColor: "#373737" }}
+                >
+                  Book Your Acts
+                </h3>
+                <p className="card-text" style={{ backgroundColor: "#373737" }}>
+                  Ready for live music? Discover a varied artist lineup for your
+                  venue. Filter by genre, location, and availability to find
+                  exact matches for your requirements.
                 </p>
-                <a href="#" className="btn btn-primary">
-                  {" "}
-                  {/* Change btn-primary to btn-dark */}
-                  Read More
-                </a>
+                <button className="btn btn-primary text-light my-2">
+                  Book Artists
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

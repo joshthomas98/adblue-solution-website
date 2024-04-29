@@ -10,7 +10,7 @@ const myfont = {
 const Homepage = () => {
   return (
     <div style={myfont}>
-      <section>
+      <section className="hero">
         <img
           src="/src/assets/banner-2.jpeg"
           alt=""
@@ -33,16 +33,21 @@ const Homepage = () => {
         </h1>
       </section>
 
-      <section className="container pt-5">
+      <section className="home-about container py-5">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-4 offset-md-1">
+            {" "}
+            {/* Adjusted column width and offset */}
             <img
+              style={{ height: "400px", width: "auto" }}
               className="img-fluid"
               src="/src/assets/van man white background no slogan.svg"
               alt=""
             />
           </div>
-          <div className="col-md-6 d-flex justify-content-center align-items-center">
+          <div className="col-md-6 d-flex align-items-center">
+            {" "}
+            {/* Adjusted column width */}
             <div className="container">
               <h2 className="pb-1">It's What We Do</h2>
               <p className="pb-1">
@@ -59,7 +64,10 @@ const Homepage = () => {
         </div>
       </section>
 
-      <section className="pt-5">
+      <section
+        className="homepage-cards py-5"
+        style={{ backgroundColor: "#1D1D1C" }}
+      >
         <HomepageCards />
       </section>
     </div>
