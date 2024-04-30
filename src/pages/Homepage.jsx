@@ -10,27 +10,44 @@ const myfont = {
 const Homepage = () => {
   return (
     <div style={myfont}>
-      <section className="hero">
+      <section
+        className="hero"
+        style={{ position: "relative", overflow: "hidden" }}
+      >
         <img
           src="/src/assets/banner-2.jpeg"
           alt=""
-          style={{ width: "100%", height: "auto" }}
+          style={{ width: "100%", height: "auto", display: "block" }}
         />
-        <h1
-          // className="gruppo"
+        <div
+          className="text-container"
           style={{
             position: "absolute",
-            top: "40%",
+            top: "20%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            color: "#eee",
             textAlign: "center",
-            background: "none",
-            fontSize: "5rem",
+            color: "white",
+            background: "none", // Set background to none to make it transparent
+            maxWidth: "80%", // Limit width to 80% of the viewport width
+            zIndex: "1",
           }}
         >
-          Welcome To AdBlue Solution
-        </h1>
+          <h1
+            style={{
+              fontSize: "5vw", // Responsive font size based on viewport width
+              background: "none",
+              "@media (max-width: 768px)": {
+                fontSize: "4vw", // Adjust font size for smaller screens
+              },
+              "@media (max-width: 576px)": {
+                fontSize: "3vw", // Adjust font size for even smaller screens
+              },
+            }}
+          >
+            Welcome To AdBlue Solution
+          </h1>
+        </div>
       </section>
 
       <section className="home-about container py-5">

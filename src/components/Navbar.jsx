@@ -13,6 +13,7 @@ function NavbarComponent() {
   const linkStyle = {
     fontFamily: "'Red Hat Display', sans-serif",
     fontSize: "1.3rem",
+    whiteSpace: "nowrap", // Added this line to prevent wrapping
   };
 
   return (
@@ -56,6 +57,10 @@ function NavbarComponent() {
 
             <Nav.Link href="/contact" style={linkStyle}>
               Contact
+            </Nav.Link>
+
+            <Nav.Link href="/getquote" style={linkStyle}>
+              Get Quote
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
