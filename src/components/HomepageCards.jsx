@@ -76,7 +76,7 @@ const HomepageCards = () => {
               </div>
             </div>
           </div>
-          <div className="col-md px-4">
+          <div className="col-md px-4 mb-sm-4">
             <div
               className="card bg-dark text-light"
               style={{ backgroundColor: "#373737" }}
@@ -124,7 +124,7 @@ const HomepageCards = () => {
       </div>
 
       <div
-        className="text-center pt-3 pb-2"
+        className="text-center pt-3 pb-4"
         style={{ backgroundColor: "#1D1D1C" }}
       >
         <Button href="/reviewslist">Go To Reviews</Button>
