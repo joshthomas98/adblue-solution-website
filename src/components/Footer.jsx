@@ -52,7 +52,7 @@ const Footer = () => {
                 <div className="footer_menu text-center text-sm-left">
                   <ul>
                     <li>
-                      <a href="#">About Us</a>
+                      <a href="/about">About Us</a>
                     </li>
                     <li>
                       <a href="#">Corporate Sale</a>
