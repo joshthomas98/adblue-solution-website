@@ -107,7 +107,15 @@ const Homepage = () => {
               warnings and the need for constant refills.
             </p>
           </Container>
-          <p className="lead text-center">
+          <h4 className="text-center pt-3 pb-3">The Areas We Cover</h4>
+          <Container className="d-flex justify-content-center">
+            <img
+              className="img-fluid w-50"
+              src="src/assets/araes we cover - map.svg"
+              alt="areas we cover map"
+            />
+          </Container>
+          <p className="lead text-center pt-4">
             Contact us today to learn more and book your appointment!
           </p>
 
@@ -133,6 +141,15 @@ const Homepage = () => {
                     </div>
                     <div className="form-group col-md-6 pb-sm-3">
                       <input
+                        type="text"
+                        name="vehicle_registration"
+                        className="form-control"
+                        placeholder="Vehicle Registration"
+                        required="required"
+                      />
+                    </div>
+                    <div className="form-group col-md-6 pb-sm-3">
+                      <input
                         type="email"
                         name="email"
                         className="form-control"
@@ -140,14 +157,27 @@ const Homepage = () => {
                         required="required"
                       />
                     </div>
-                    <div className="form-group col-md-12 mb-3">
+                    <div className="form-group col-md-6 pb-sm-3">
                       <input
-                        type="text"
-                        name="subject"
+                        type="tel"
+                        name="contact_number"
                         className="form-control"
-                        placeholder="Subject"
+                        placeholder="Contact Number"
                         required="required"
                       />
+                    </div>
+                    <div className="form-group col-md-12 pb-sm-3 d-flex justify-content-center">
+                      <select
+                        name="area"
+                        className="form-control"
+                        required="required"
+                      >
+                        <option value="">Select Area</option>
+                        <option value="1">Area 1</option>
+                        <option value="2">Area 2</option>
+                        <option value="3">Area 3</option>
+                        <option value="4">Area 4</option>
+                      </select>
                     </div>
                     <div className="form-group col-md-12 mb-3">
                       <textarea

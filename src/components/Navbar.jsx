@@ -59,8 +59,8 @@ function NavbarComponent() {
               Contact
             </Nav.Link>
 
-            <Nav.Link href="/getquote" style={linkStyle}>
-              Get Quote
+            <Nav.Link href="/reviewslist" style={linkStyle}>
+              Reviews
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
