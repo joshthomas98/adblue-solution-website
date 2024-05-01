@@ -58,7 +58,7 @@ const Homepage = () => {
             <img
               style={{ height: "400px", width: "auto" }}
               className="img-fluid"
-              src="/src/assets/van man white background no slogan.svg"
+              src="src/assets/van man white background no slogan.png"
               alt=""
             />
           </div>
@@ -70,10 +70,11 @@ const Homepage = () => {
               <p className="pb-1">
                 UK specialists in Adblue delete services. Our experienced
                 technicians, cutting-edge equipment, and thorough diagnostics
-                ensure prompt and reliable solutions to your Adblue issues, as
-                well as a wide range of other vehicle-related services. Your
-                safety and satisfaction are our top priorities. Explore our
-                comprehensive ECU services.
+                software ensure prompt and reliable solutions to your Adblue
+                issues, as well as a wide range of other vehicle-related
+                services. Your safety and satisfaction are our top priorities.
+                Explore our comprehensive list of services and get a free quote
+                today.
               </p>
               <Button href="/about">Find out more about us</Button>
             </div>
