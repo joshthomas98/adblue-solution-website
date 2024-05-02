@@ -95,6 +95,18 @@ const Contact = () => {
                   <p>07944162191</p>
                 </div>
                 <div className="single_address">
+                  <a
+                    href="https://wa.link/adbluesolution"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <i className="fa fa-whatsapp" />
+                    <h4 className="text-dark">Contact us on WhatsApp</h4>
+                    <p className="text-dark">https://wa.link/adbluesolution</p>
+                  </a>
+                </div>
+                <div className="single_address">
                   <i className="fa fa-clock-o" />
                   <h4>Work Time</h4>
                   <p>
