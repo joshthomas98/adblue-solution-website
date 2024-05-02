@@ -87,12 +87,12 @@ const Contact = () => {
                 <div className="single_address">
                   <i className="fa fa-envelope" />
                   <h4>Send your message</h4>
-                  <p>Info@example.com</p>
+                  <p>info@adbluesolution.co.uk</p>
                 </div>
                 <div className="single_address">
                   <i className="fa fa-phone" />
                   <h4>Call us on</h4>
-                  <p>(+1) 517 397 7100</p>
+                  <p>07944162191</p>
                 </div>
                 <div className="single_address">
                   <i className="fa fa-clock-o" />

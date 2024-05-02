@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWrench, faCar, faCogs } from "@fortawesome/free-solid-svg-icons";
@@ -95,13 +94,13 @@ const Homepage = () => {
         </section>
 
         <section
-          className="homepage-cards py-5"
+          className="homepage-cards py-5 text-center"
           style={{ backgroundColor: "#1D1D1C" }}
         >
           <Container className="py-5">
-            <h1 className="text-center">So What Is Adblue?</h1>
+            <h1>So What Is Adblue?</h1>
             <Container>
-              <p className="text-center">
+              <p>
                 AdBlue is a necessary component in modern diesel vehicles, but
                 it can be costly and inconvenient. If you're tired of dealing
                 with AdBlue issues, our expert removal service is the solution
@@ -110,7 +109,7 @@ const Homepage = () => {
                 dashboard warnings and the need for constant refills.
               </p>
             </Container>
-            <h4 className="text-center pt-3 pb-3">The Areas We Cover</h4>
+            <h3 className="pt-3 pb-3">Areas We Cover</h3>
             <Container className="d-flex justify-content-center">
               <img
                 className="img-fluid w-50"
@@ -118,7 +117,40 @@ const Homepage = () => {
                 alt="areas we cover map"
               />
             </Container>
-            <p className="lead text-center pt-4">
+            <Container>
+              <p className="pt-4">
+                We currently cover the areas listed below and will be extending
+                our coverage in due course!
+              </p>
+              <ul>
+                <li>30 Mile radius of:</li>
+                <ul>
+                  <li>Cardiff</li>
+                  <li>Worthing</li>
+                  <li>St Helens</li>
+                  <li>Bradford</li>
+                </ul>
+              </ul>
+              <p>
+                We will travel outside of the area for fleet services and
+                multiple vehicle bookings.
+              </p>
+              <p>
+                At Adblue Solution, we are dedicated to providing AdBlue
+                solutions to customers across a wide geographic area. Our
+                comprehensive coverage ensures that, no matter where you are,
+                you can access the high-quality products and services you need
+                to keep your vehicles running smoothly.
+              </p>
+              <p>
+                With a focus on reliability and professionalism, our
+                comprehensive coverage guarantees access to premium products and
+                services essential for maintaining the smooth operation of your
+                vehicles. Count on Adblue Solution to be your trusted partner in
+                keeping your fleet running efficiently and responsibly.
+              </p>
+            </Container>
+            <p className="lead pt-3">
               Contact us today to learn more and book your appointment!
             </p>
             <HomepageContact />
