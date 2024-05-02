@@ -3,7 +3,7 @@ import { ref, push } from "firebase/database";
 import { database } from "../Firebase";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { Spinner } from "@chakra-ui/react"; // Import Chakra UI Spinner
+import { Spinner } from "@chakra-ui/react";
 import StarRating from "../components/StarRating";
 
 const ReviewForm = () => {
@@ -18,7 +18,7 @@ const ReviewForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    setIsLoading(true); // Start loading when form is submitted
+    setIsLoading(true);
 
     const reviewsRef = ref(database, "reviews");
     const newReview = {
