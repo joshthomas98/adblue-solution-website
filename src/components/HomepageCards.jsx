@@ -1,5 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const HomepageCards = () => {
   return (
@@ -30,17 +32,68 @@ const HomepageCards = () => {
                   className="card-title mb-3"
                   style={{ backgroundColor: "#373737" }}
                 >
-                  John
+                  Jeff Jones
                 </h3>
                 <p className="lead" style={{ backgroundColor: "#373737" }}>
-                  Cardiff
+                  Gloucester
                 </p>
+                <div
+                  className="pb-3"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    backgroundColor: "#373737",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                </div>
                 <p
                   className="card-text pb-3"
                   style={{ backgroundColor: "#373737" }}
                 >
-                  AdBlue Solution did a fantastic job, absolutely top notch!
-                  Would highly recommend.
+                  Adblue Solution surpassed expectations. Expertise and
+                  professionalism unmatched. From start to finish, exceptional
+                  service, addressing all vehicle needs with precision and care.
+                  They set a new standard.
                 </p>
               </div>
             </div>
@@ -61,17 +114,68 @@ const HomepageCards = () => {
                   className="card-title mb-3"
                   style={{ backgroundColor: "#373737" }}
                 >
-                  Steven
+                  Richard Davies
                 </h3>
                 <p className="lead" style={{ backgroundColor: "#373737" }}>
-                  Bristol
+                  Swansea
                 </p>
+                <div
+                  className="pb-3"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    backgroundColor: "#373737",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                </div>
                 <p
                   className="card-text pb-3"
                   style={{ backgroundColor: "#373737" }}
                 >
-                  AdBlue Solution exceeded my expectations! Highly recommend
-                  their services.
+                  Adblue Solution exceeded all of my expectations. From the
+                  initial consultation to delivery, their expertise and
+                  attention to detail stood out. Commitment to quality sets them
+                  apart.
                 </p>
               </div>
             </div>
@@ -92,17 +196,68 @@ const HomepageCards = () => {
                   className="card-title mb-3"
                   style={{ backgroundColor: "#373737" }}
                 >
-                  Mark
+                  John Jacobs
                 </h3>
                 <p className="lead" style={{ backgroundColor: "#373737" }}>
                   London
                 </p>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    backgroundColor: "#373737",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    className="pb-3"
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{
+                      color: "#FFD700",
+                      marginRight: "2px",
+                      backgroundColor: "#373737",
+                    }}
+                  />
+                </div>
                 <p
                   className="card-text pb-3"
                   style={{ backgroundColor: "#373737" }}
                 >
-                  AdBlue Solution delivered exceptional service, couldn't be
-                  happier! Highly recommended!
+                  Thrilled with the work done by Adblue Solution! Prompt,
+                  professional team went above and beyond to complete our
+                  project on time and within budget. Highly recommend for
+                  top-notch solutions.
                 </p>
               </div>
             </div>
