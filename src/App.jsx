@@ -14,6 +14,10 @@ import ReviewForm from "./pages/ReviewForm";
 import ReviewsList from "./pages/ReviewsList";
 import ReviewSubmitted from "./pages/ReviewSubmitted";
 import DarkVariantExample from "./components/Carousel";
+import FaqAccordion from "./pages/Faqs";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import BasicSpinner from "./components/Spinner";
 
 const App = () => {
   return (
@@ -48,6 +52,14 @@ const App = () => {
           />
 
           <Route path="/carousel" element={<DarkVariantExample />} />
+
+          <Route path="/faqs" element={<FaqAccordion />} />
+
+          <Route path="/termsandconditions" element={<TermsAndConditions />} />
+
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+
+          <Route path="/spinner" element={<BasicSpinner />} />
         </Routes>
         <Footer />
       </ServicesProvider>

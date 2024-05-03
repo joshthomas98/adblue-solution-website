@@ -14,7 +14,7 @@ const HomepageCards = () => {
       </div>
       <div className="container">
         <div className="row text-center g-4">
-          <div className="col-md pb-4 px-4">
+          <div className="col-md px-4">
             <div
               className="card bg-dark text-light"
               style={{ backgroundColor: "#373737" }}

@@ -47,21 +47,23 @@ const Footer = () => {
             <div className="col-12 col-sm-12 col-lg py-sm-4">
               <div className="single-footer-widget section_padding_0_130">
                 {/* Widget Title*/}
-                <h5 className="widget-title text-center text-sm-left">About</h5>
+                <h5 className="widget-title text-center text-sm-left">
+                  Quick Links
+                </h5>
                 {/* Footer Menu*/}
                 <div className="footer_menu text-center text-sm-left">
                   <ul>
                     <li>
-                      <a href="/about">About Us</a>
+                      <a href="/about">Services</a>
                     </li>
                     <li>
-                      <a href="#">Corporate Sale</a>
+                      <a href="#">About</a>
                     </li>
                     <li>
-                      <a href="#">Terms &amp; Policy</a>
+                      <a href="#">Contact</a>
                     </li>
                     <li>
-                      <a href="#">Community</a>
+                      <a href="#">Reviews</a>
                     </li>
                   </ul>
                 </div>
@@ -78,19 +80,13 @@ const Footer = () => {
                 <div className="footer_menu text-center text-sm-left">
                   <ul>
                     <li>
-                      <a href="#">Help</a>
+                      <a href="/faqs">FAQs</a>
                     </li>
                     <li>
-                      <a href="#">Support</a>
+                      <a href="/contact">Help &amp; Support</a>
                     </li>
                     <li>
-                      <a href="#">Privacy Policy</a>
-                    </li>
-                    <li>
-                      <a href="#">Term &amp; Conditions</a>
-                    </li>
-                    <li>
-                      <a href="#">Help &amp; Support</a>
+                      <a href="/contact">Got a Question?</a>
                     </li>
                   </ul>
                 </div>
@@ -100,23 +96,18 @@ const Footer = () => {
             <div className="col-12 col-sm-12 col-lg py-sm-4">
               <div className="single-footer-widget section_padding_0_130">
                 {/* Widget Title*/}
-                <h5 className="widget-title text-center text-sm-left">
-                  Contact
-                </h5>
+                <h5 className="widget-title text-center text-sm-left">Legal</h5>
                 {/* Footer Menu*/}
                 <div className="footer_menu text-center text-sm-left">
                   <ul>
                     <li>
-                      <a href="#">Call Centre</a>
+                      <a href="/termsandconditions">Terms &amp; Conditions</a>
                     </li>
                     <li>
-                      <a href="#">Email Us</a>
+                      <a href="/privacypolicy">Privacy Policy</a>
                     </li>
                     <li>
-                      <a href="#">Term &amp; Conditions</a>
-                    </li>
-                    <li>
-                      <a href="#">Help Center</a>
+                      <a href="/about">Disclaimers</a>
                     </li>
                   </ul>
                 </div>

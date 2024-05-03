@@ -8,7 +8,8 @@ const servicesData = [
   {
     id: 1,
     name: "Stage 1 Tuning",
-    shortDescription: "Optimise performance via ECU software modifications.",
+    shortDescription:
+      "Optimise vehicle performance via ECU software modifications.",
     description:
       "Stage 1 tuning typically involves software modifications to the engine control unit (ECU) to optimise performance without significant hardware changes. This may include adjustments to fuel maps, ignition timing, and boost pressure to increase power and torque output within safe limits.",
     iconClass: "fas fa-cogs",
@@ -17,7 +18,7 @@ const servicesData = [
     id: 2,
     name: "Stage 2 Tuning",
     shortDescription:
-      "Enhanced performance with additional hardware and software modifications.",
+      "Extra performance with additional hardware and software modifications.",
     description:
       "Stage 2 tuning usually builds upon Stage 1 by incorporating additional hardware modifications, such as upgraded intake and exhaust systems, intercoolers, and turbochargers. This allows for more aggressive tuning and higher power gains compared to Stage 1.",
     iconClass: "fas fa-tachometer-alt",
@@ -34,7 +35,7 @@ const servicesData = [
   {
     id: 4,
     name: "Adblue Delete",
-    shortDescription: "Increase performance by removing Adblue system.",
+    shortDescription: "Increase vehicle performance by removing Adblue system.",
     description:
       "Adblue is a urea-based solution used in modern diesel engines to reduce nitrogen oxide emissions. Adblue delete involves disabling or removing the Adblue system, which can lead to increased emissions and may not comply with environmental regulations.",
     iconClass: "fas fa-times-circle",
@@ -83,7 +84,8 @@ const servicesData = [
   {
     id: 10,
     name: "MAF Delete",
-    shortDescription: "Improve air-fuel ratio by removing MAF sensor.",
+    shortDescription:
+      "Improve your vehicle's air-fuel ratio by removing the MAF sensor.",
     description:
       "MAF (Mass Air Flow) sensor measures the amount of air entering the engine and is crucial for fuel metering. MAF delete involves removing or bypassing this sensor, but it can disrupt air-fuel ratio calculations and potentially cause drivability issues.",
     iconClass: "fas fa-wind",
