@@ -64,7 +64,7 @@ const About = () => {
           <div className="row align-items-center justify-content-between">
             <div className="col-md p-5 order-md-last">
               <img
-                src="/src/assets/Can man  habd on hip and thumbs up good hand black background.png"
+                src="src/assets/laptop and flex on bmw engine.svg"
                 className="img-fluid"
                 alt=""
                 style={{ marginLeft: "12px" }}
@@ -114,7 +114,7 @@ const About = () => {
           <div className="row align-items-center justify-content-between">
             <div className="col-md p-5">
               <img
-                src="/src/assets/Can man  habd on hip and thumbs up good hand black background.png"
+                src="src/assets/CAT CONVERTER.png"
                 className="img-fluid"
                 alt=""
                 style={{ marginLeft: "12px" }}
@@ -148,33 +148,30 @@ const About = () => {
         </div>
       </section>
 
-      <section id="learn" className="p-5 bg-dark">
+      {/*- Section 4 */}
+      <section id="learn" className="p-5 bg-dark text-center">
         <div className="container">
           <div className="row align-items-center justify-content-between">
-            <div className="col-md p-5 order-md-last">
-              <img
-                src="/src/assets/Can man  habd on hip and thumbs up good hand black background.png"
-                className="img-fluid"
-                alt=""
-              />
-            </div>
             <div className="col-md p-5">
-              <h2>Legal Disclaimer and Guidance</h2>
-              <p>
-                DISCLAIMER: Adblue Solution does not advocate or endorse the
-                removal of AdBlue systems from vehicles without proper
-                consideration of legal regulations. We encourage our customers
-                to prioritize compliance with emissions standards and to seek
-                professional advice when considering modifications to their
-                vehicles.
-              </p>
-              <p>
-                Final Note: The information provided here is for general
-                guidance purposes only and should not be construed as legal
-                advice. It is your responsibility to conduct thorough research
-                and consult with appropriate authorities to ensure compliance
-                with all applicable laws and regulations.
-              </p>
+              <h2 className="pb-3">Legal Disclaimer and Guidance</h2>
+              <div className="container">
+                <p>
+                  <span style={{ fontWeight: "bold" }}>DISCLAIMER:</span> Adblue
+                  Solution does not advocate or endorse the removal of AdBlue
+                  systems from vehicles without proper consideration of legal
+                  regulations. We encourage our customers to prioritize
+                  compliance with emissions standards and to seek professional
+                  advice when considering modifications to their vehicles.
+                </p>
+                <p>
+                  <span style={{ fontWeight: "bold" }}>Final Note:</span> The
+                  information provided here is for general guidance purposes
+                  only and should not be construed as legal advice. It is your
+                  responsibility to conduct thorough research and consult with
+                  appropriate authorities to ensure compliance with all
+                  applicable laws and regulations.
+                </p>
+              </div>
             </div>
           </div>
         </div>

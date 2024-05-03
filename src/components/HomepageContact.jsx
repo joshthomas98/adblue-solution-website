@@ -36,8 +36,8 @@ const Contact = () => {
 
   return (
     <>
-      {/* Blur background if loading */}
       {isLoading && (
+        // Show a semi-transparent background and a spinner while loading
         <div
           style={{
             position: "fixed",
@@ -49,7 +49,24 @@ const Contact = () => {
             backdropFilter: "blur(5px)",
             zIndex: 1,
           }}
-        />
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            <BasicSpinner
+              thickness="4px"
+              speed="0.65s"
+              emptyColor="gray.200"
+              color="blue.500"
+              size="xl"
+            />
+          </div>
+        </div>
       )}
 
       <div className="row justify-content-center">
@@ -142,27 +159,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      {/* Spinner */}
-      {isLoading && (
-        <div
-          style={{
-            position: "fixed",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            zIndex: 2,
-          }}
-        >
-          <BasicSpinner
-            thickness="4px"
-            speed="0.65s"
-            emptyColor="gray.200"
-            color="blue.500"
-            size="xl"
-          />
-        </div>
-      )}
     </>
   );
 };
