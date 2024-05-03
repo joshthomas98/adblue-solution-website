@@ -1,9 +1,74 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import emailjs from "@emailjs/browser";
+import BasicSpinner from "../components/Spinner";
 
 const Contact = () => {
+  const navigate = useNavigate();
+
+  const formRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setIsLoading(true);
+
+    emailjs
+      .sendForm("service_d38c8w8", "template_66mn5h7", formRef.current, {
+        publicKey: "JdEmvpiqWHQDGE7TP",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          navigate("/messagesent");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      )
+      .finally(() => {
+        setIsLoading(false); // Set isLoading back to false after API call completes
+        e.target.reset();
+      });
+  };
+
   return (
     <>
+      {isLoading && (
+        // Show a semi-transparent background and a spinner while loading
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(255, 255, 255, 0.5)",
+            backdropFilter: "blur(5px)",
+            zIndex: 1,
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            <BasicSpinner
+              thickness="4px"
+              speed="0.65s"
+              emptyColor="gray.200"
+              color="blue.500"
+              size="xl"
+            />
+          </div>
+        </div>
+      )}
+
       <div id="contact" className="contact-area section-padding">
         <div className="container">
           <div className="section-title text-center">
@@ -20,11 +85,12 @@ const Contact = () => {
               <div className="col-lg-7">
                 <div className="contact">
                   <form
+                    ref={formRef}
                     className="form"
                     name="enq"
                     method="post"
                     action="contact.php"
-                    onsubmit="return validation();"
+                    onSubmit="return validation();"
                   >
                     <div className="row">
                       <div className="form-group col-md-6 mb-3">
@@ -33,7 +99,7 @@ const Contact = () => {
                           name="name"
                           className="form-control"
                           placeholder="Name"
-                          required="required"
+                          required
                         />
                       </div>
                       <div className="form-group col-md-6 pb-sm-3">
@@ -42,7 +108,7 @@ const Contact = () => {
                           name="email"
                           className="form-control"
                           placeholder="Email"
-                          required="required"
+                          required
                         />
                       </div>
                       <div className="form-group col-md-12 mb-3">
@@ -51,7 +117,7 @@ const Contact = () => {
                           name="subject"
                           className="form-control"
                           placeholder="Subject"
-                          required="required"
+                          required
                         />
                       </div>
                       <div className="form-group col-md-12 mb-3">
@@ -60,20 +126,16 @@ const Contact = () => {
                           name="message"
                           className="form-control"
                           placeholder="Your Message"
-                          required="required"
+                          required
                           defaultValue={""}
                         />
                       </div>
                       <div className="col-md-12 text-center">
                         <Button
                           type="submit"
-                          value="Send message"
-                          name="submit"
-                          id="submitButton"
                           className="btn btn-contact-bg rounded-pill"
-                          title="Submit Your Message!"
                           style={{ maxWidth: "150px" }}
-                          href="/messagesent"
+                          onClick={sendEmail}
                         >
                           Send Message
                         </Button>
@@ -82,7 +144,6 @@ const Contact = () => {
                   </form>
                 </div>
               </div>
-              {/*- END COL */}
               <div className="col-lg-5 pt-md-4">
                 <div className="single_address">
                   <i className="fa fa-envelope" />
@@ -110,7 +171,7 @@ const Contact = () => {
                   <i className="fa fa-clock-o" />
                   <h4>Work Time</h4>
                   <p>
-                    Mon - Fri: 08.00 - 16.00. <br />
+                    Mon - Fri: 09.00 - 17.00. <br />
                     Sat: 10.00 - 14.00
                   </p>
                 </div>

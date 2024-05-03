@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-import { Spinner } from "@chakra-ui/react";
+import BasicSpinner from "./Spinner";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -154,7 +154,7 @@ const Contact = () => {
             zIndex: 2,
           }}
         >
-          <Spinner
+          <BasicSpinner
             thickness="4px"
             speed="0.65s"
             emptyColor="gray.200"
