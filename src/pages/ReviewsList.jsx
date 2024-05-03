@@ -42,6 +42,7 @@ const RatingStars = ({ rating }) => {
 const ReviewsList = () => {
   const [reviews, setReviews] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [activeFilter, setActiveFilter] = useState(null);
 
   useEffect(() => {
     const reviewsRef = ref(database, "reviews");
@@ -49,13 +50,40 @@ const ReviewsList = () => {
       const reviewsData = snapshot.val();
       if (reviewsData) {
         const reviewsList = Object.values(reviewsData);
-        setReviews(reviewsList);
+        // Sort the reviews by createdAt timestamp in descending order
+        const sortedReviews = reviewsList.sort(
+          (a, b) => b.createdAt - a.createdAt
+        );
+        setReviews(sortedReviews);
       } else {
         setReviews([]);
       }
       setLoading(false);
     });
   }, []); // Run only once on component mount
+
+  // Function to sort reviews by most recent
+  const sortByMostRecent = () => {
+    const sortedReviews = [...reviews].sort(
+      (a, b) => b.createdAt - a.createdAt
+    );
+    setReviews(sortedReviews);
+    setActiveFilter("mostRecent");
+  };
+
+  // Function to sort reviews by highest rating
+  const sortByHighestRating = () => {
+    const sortedReviews = [...reviews].sort((a, b) => b.rating - a.rating);
+    setReviews(sortedReviews);
+    setActiveFilter("highestRating");
+  };
+
+  // Function to sort reviews by lowest rating
+  const sortByLowestRating = () => {
+    const sortedReviews = [...reviews].sort((a, b) => a.rating - b.rating);
+    setReviews(sortedReviews);
+    setActiveFilter("lowestRating");
+  };
 
   return (
     <div>
@@ -77,13 +105,28 @@ const ReviewsList = () => {
           <div className="d-flex align-items-center pb-4">
             <p className="m-0 me-2">Sort by:</p>
             <div className="sort-by-buttons">
-              <div className="border btn btn-light rounded-pill me-1">
+              <div
+                className={`border btn btn-light rounded-pill me-1 ${
+                  activeFilter === "mostRecent" ? "active" : ""
+                }`}
+                onClick={sortByMostRecent}
+              >
                 Most Recent
               </div>
-              <div className="border btn btn-light rounded-pill me-1">
+              <div
+                className={`border btn btn-light rounded-pill me-1 ${
+                  activeFilter === "highestRating" ? "active" : ""
+                }`}
+                onClick={sortByHighestRating}
+              >
                 Highest
               </div>
-              <div className="border btn btn-light rounded-pill me-1">
+              <div
+                className={`border btn btn-light rounded-pill me-1 ${
+                  activeFilter === "lowestRating" ? "active" : ""
+                }`}
+                onClick={sortByLowestRating}
+              >
                 Lowest
               </div>
             </div>
