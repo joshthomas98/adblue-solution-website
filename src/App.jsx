@@ -13,7 +13,6 @@ import IndividualService from "./pages/IndividualService";
 import ReviewForm from "./pages/ReviewForm";
 import ReviewsList from "./pages/ReviewsList";
 import ReviewSubmitted from "./pages/ReviewSubmitted";
-import DarkVariantExample from "./components/Carousel";
 import FaqAccordion from "./pages/Faqs";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -50,8 +49,6 @@ const App = () => {
             path="/reviewsubmittedsuccessfully"
             element={<ReviewSubmitted />}
           />
-
-          <Route path="/carousel" element={<DarkVariantExample />} />
 
           <Route path="/faqs" element={<FaqAccordion />} />
 

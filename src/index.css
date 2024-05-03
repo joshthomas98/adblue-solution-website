@@ -574,11 +574,11 @@ body {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(src/assets/unlit-star.png); /* Replace with your star icon */
+  background-image: url(/assets/unlit-star.png); /* Replace with your star icon */
   background-size: cover;
   cursor: pointer;
 }
 
 .star.lit {
-  background-image: url(src/assets/lit-star.png); /* Replace with your lit star icon */
+  background-image: url(/assets/lit-star.png); /* Replace with your lit star icon */
 }

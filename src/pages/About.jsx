@@ -9,7 +9,7 @@ const About = () => {
           <div className="row align-items-center justify-content-between">
             <div className="col-md">
               <img
-                src="/src/assets/Can man  habd on hip and thumbs up good hand black background.png"
+                src="/assets/Can man  habd on hip and thumbs up good hand black background.png"
                 className="img-fluid"
                 alt=""
               />
@@ -64,7 +64,7 @@ const About = () => {
           <div className="row align-items-center justify-content-between">
             <div className="col-md p-5 order-md-last">
               <img
-                src="src/assets/laptop and flex on bmw engine.svg"
+                src="/assets/laptop and flex on bmw engine.svg"
                 className="img-fluid"
                 alt=""
                 style={{ marginLeft: "12px" }}
@@ -114,7 +114,7 @@ const About = () => {
           <div className="row align-items-center justify-content-between">
             <div className="col-md p-5">
               <img
-                src="src/assets/CAT CONVERTER.png"
+                src="/assets/CAT CONVERTER.png"
                 className="img-fluid"
                 alt=""
                 style={{ marginLeft: "12px" }}

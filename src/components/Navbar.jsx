@@ -23,7 +23,7 @@ function NavbarComponent() {
         <div className="pt-xs-sm-md-only">
           <Navbar.Brand href="/">
             <img
-              src="src/assets/LOGO WHITE NO BG.png"
+              src="/assets/LOGO WHITE NO BG.png"
               alt="LOGO"
               className="w-25 mx-3 pb-lg-2"
             />

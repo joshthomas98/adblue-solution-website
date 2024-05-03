@@ -66,7 +66,7 @@ const Services = () => {
           <Container className="d-flex justify-content-center pt-3">
             <img
               className="img-fluid w-25"
-              src="src/assets/credit card CROPED WITH BLUE BACK FOR CONTACT US PAGE 2.svg"
+              src="/assets/credit card CROPED WITH BLUE BACK FOR CONTACT US PAGE 2.svg"
               alt="card"
             />
           </Container>

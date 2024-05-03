@@ -18,7 +18,7 @@ const Footer = () => {
                 <Center>
                   <div className="footer-logo" />
                   <img
-                    src="src/assets/LOGO WHITE NO BG.png"
+                    src="/assets/LOGO WHITE NO BG.png"
                     alt="LOGO"
                     className="w-75 mt-3 mx-3 mb-4"
                   />

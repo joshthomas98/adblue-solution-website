@@ -19,7 +19,7 @@ const Homepage = () => {
           style={{ position: "relative", overflow: "hidden" }}
         >
           <img
-            src="/src/assets/banner-2.jpeg"
+            src="/assets/banner-2.jpeg"
             alt=""
             style={{ width: "100%", height: "auto", display: "block" }}
           />
@@ -86,7 +86,7 @@ const Homepage = () => {
               <img
                 style={{ height: "auto", maxWidth: "100%" }}
                 className="img-fluid"
-                src="src/assets/van man white background no slogan.png"
+                src="/assets/van man white background no slogan.png"
                 alt=""
               />
             </Col>
@@ -113,7 +113,7 @@ const Homepage = () => {
             <Container className="d-flex justify-content-center">
               <img
                 className="img-fluid w-50"
-                src="src/assets/araes we cover - map.svg"
+                src="/assets/araes we cover - map.svg"
                 alt="areas we cover map"
               />
             </Container>
