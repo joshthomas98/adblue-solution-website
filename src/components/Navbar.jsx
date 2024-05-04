@@ -1,3 +1,7 @@
+import React from "react";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -18,17 +22,51 @@ function NavbarComponent() {
 
   return (
     <div className="px-5">
-      <Navbar collapseOnSelect expand="lg">
-        {/* Add custom class for xs, sm, and md screen sizes */}
-        <div className="pt-xs-sm-md-only">
-          <Navbar.Brand href="/">
-            <img
-              src="/assets/LOGO WHITE NO BG.png"
-              alt="LOGO"
-              className="w-25 mx-3 pb-lg-2"
-            />
-          </Navbar.Brand>
+      <div className="pb-2">
+        <div
+          className="d-flex justify-content-start align-items-center pt-3"
+          style={{ marginBottom: "-35px" }}
+        >
+          <div className="d-none d-lg-block">
+            <a
+              href="https://wa.link/adbluesolution"
+              target="blank"
+              style={{ color: "black", display: "flex", alignItems: "center" }}
+            >
+              <FontAwesomeIcon
+                className="mr-2"
+                style={{ paddingLeft: "18px" }}
+                icon={faWhatsapp}
+              />
+              <span className="px-2">https://wa.link/adbluesolution</span>
+            </a>
+          </div>
         </div>
+        <div className="d-flex justify-content-end align-items-center pt-3">
+          <div className="d-none d-lg-block ml-lg-3">
+            <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
+            <span className="px-2" style={{ marginRight: "10px" }}>
+              info@adbluesolution.co.uk
+            </span>
+            <FontAwesomeIcon className="mr-2" icon={faPhone} />
+            <span className="px-2">07944162191</span>
+          </div>
+        </div>
+      </div>
+
+      <Navbar
+        className="pt-sm-3 pt-lg-0"
+        collapseOnSelect
+        expand="lg"
+        style={{ marginTop: "-4px" }}
+      >
+        <Navbar.Brand href="/">
+          <img
+            src="/assets/LOGO WHITE NO BG.png"
+            alt="LOGO"
+            className="w-25 mx-3 pb-lg-2"
+          />
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           style={{
@@ -42,7 +80,6 @@ function NavbarComponent() {
             <Nav.Link href="/" style={linkStyle}>
               Home
             </Nav.Link>
-
             <Nav.Link
               href="/services"
               style={linkStyle}
@@ -50,15 +87,12 @@ function NavbarComponent() {
             >
               Services
             </Nav.Link>
-
             <Nav.Link href="/about" style={linkStyle}>
               About
             </Nav.Link>
-
             <Nav.Link href="/contact" style={linkStyle}>
               Contact
             </Nav.Link>
-
             <Nav.Link href="/reviewslist" style={linkStyle}>
               Reviews
             </Nav.Link>

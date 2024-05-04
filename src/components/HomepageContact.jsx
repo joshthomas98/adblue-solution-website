@@ -1,6 +1,6 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { Button, Alert } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import BasicSpinner from "./Spinner";
 
@@ -9,6 +9,7 @@ const Contact = () => {
   const formRef = useRef(null);
 
   const [isLoading, setIsLoading] = useState(false);
+  const [formInvalid, setFormInvalid] = useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,15 +30,39 @@ const Contact = () => {
         }
       )
       .finally(() => {
-        setIsLoading(false); // Set isLoading back to false after API call completes
-        e.target.reset();
+        setIsLoading(false);
+        formRef.current.reset();
+        setFormInvalid(true); // Reset form validation state
       });
+  };
+
+  const handleFormChange = () => {
+    const formFields = formRef.current.elements;
+    let isFormInvalid = false;
+
+    // Check if any field is empty
+    for (let field of formFields) {
+      if (
+        (field.tagName === "INPUT" || field.tagName === "TEXTAREA") &&
+        !field.value.trim()
+      ) {
+        isFormInvalid = true;
+        break;
+      }
+    }
+
+    // Check if the selected option in the dropdown menu is not "Select Area"
+    const areaSelect = formFields.namedItem("area");
+    if (areaSelect && areaSelect.value === "") {
+      isFormInvalid = true;
+    }
+
+    setFormInvalid(isFormInvalid);
   };
 
   return (
     <>
       {isLoading && (
-        // Show a semi-transparent background and a spinner while loading
         <div
           style={{
             position: "fixed",
@@ -78,7 +103,8 @@ const Contact = () => {
               name="enq"
               method="post"
               action="contact.php"
-              onSubmit="return validation();"
+              onSubmit={sendEmail}
+              onChange={handleFormChange} // Attach handleFormChange to onChange event
             >
               <div className="row">
                 <div className="form-group col-md-6 mb-3">
@@ -87,7 +113,7 @@ const Contact = () => {
                     name="name"
                     className="form-control"
                     placeholder="Name"
-                    required="required"
+                    required
                   />
                 </div>
                 <div className="form-group col-md-6 pb-sm-3">
@@ -96,7 +122,7 @@ const Contact = () => {
                     name="vehicle_registration"
                     className="form-control"
                     placeholder="Vehicle Registration"
-                    required="required"
+                    required
                   />
                 </div>
                 <div className="form-group col-md-6 pb-sm-3">
@@ -105,7 +131,7 @@ const Contact = () => {
                     name="email"
                     className="form-control"
                     placeholder="Email"
-                    required="required"
+                    required
                   />
                 </div>
                 <div className="form-group col-md-6 pb-sm-3">
@@ -114,15 +140,11 @@ const Contact = () => {
                     name="contact_number"
                     className="form-control"
                     placeholder="Contact Number"
-                    required="required"
+                    required
                   />
                 </div>
                 <div className="form-group col-md-12 pb-sm-3 d-flex justify-content-center">
-                  <select
-                    name="area"
-                    className="form-control"
-                    required="required"
-                  >
+                  <select name="area" className="form-control" required>
                     <option value="">Select Area</option>
                     <option value="1">Area 1</option>
                     <option value="2">Area 2</option>
@@ -136,20 +158,15 @@ const Contact = () => {
                     name="message"
                     className="form-control"
                     placeholder="Your Message"
-                    required="required"
+                    required
                   ></textarea>
                 </div>
                 <div className="col-md-12 text-center">
                   <Button
                     type="submit"
-                    value="Send message"
-                    name="submit"
-                    id="submitButton"
                     className="btn btn-contact-bg rounded-pill"
-                    title="Submit Your Message!"
                     style={{ maxWidth: "150px" }}
-                    href="/messagesent"
-                    onClick={sendEmail}
+                    disabled={formInvalid}
                   >
                     Send Message
                   </Button>

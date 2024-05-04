@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { ref, push } from "firebase/database";
 import { database } from "../Firebase";
-import { Form, Button, Container, Row, Col } from "react-bootstrap";
+import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { Spinner } from "@chakra-ui/react";
+import BasicSpinner from "../components/Spinner";
 import StarRating from "../components/StarRating";
 
 const ReviewForm = () => {
@@ -14,9 +14,21 @@ const ReviewForm = () => {
   const [review, setReview] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [selectedRating, setSelectedRating] = useState(0);
+  const [formInvalid, setFormInvalid] = useState(false);
+
+  // Function to check if all form fields are filled
+  const isFormValid = () => {
+    return name && location && review && selectedRating !== 0;
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    // Check if any field is empty
+    if (!isFormValid()) {
+      setFormInvalid(true);
+      return;
+    }
 
     setIsLoading(true);
 
@@ -24,7 +36,7 @@ const ReviewForm = () => {
     const newReview = {
       name: name,
       location: location,
-      rating: selectedRating, // Use selectedRating directly here
+      rating: selectedRating,
       review: review,
       createdAt: Date.now(),
     };
@@ -52,24 +64,44 @@ const ReviewForm = () => {
 
   return (
     <>
-      {/* Blur background if loading */}
       {isLoading && (
+        // Show a semi-transparent background and a spinner while loading
         <div
           style={{
             position: "fixed",
-            top: "0",
-            left: "0",
+            top: 0,
+            left: 0,
             width: "100%",
             height: "100%",
             backgroundColor: "rgba(255, 255, 255, 0.5)",
             backdropFilter: "blur(5px)",
-            zIndex: "1",
+            zIndex: 1,
           }}
-        />
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            <BasicSpinner
+              thickness="4px"
+              speed="0.65s"
+              emptyColor="gray.200"
+              color="blue.500"
+              size="xl"
+            />
+          </div>
+        </div>
       )}
 
       <Container>
         <h2 className="pt-4 pb-3">Submit a Review</h2>
+        {formInvalid && (
+          <Alert variant="danger">Please fill out all form fields.</Alert>
+        )}
         <Form onSubmit={handleSubmit}>
           <Row>
             <Col>
@@ -92,6 +124,7 @@ const ReviewForm = () => {
                   value={location}
                   placeholder="Enter your location here"
                   onChange={(e) => setLocation(e.target.value)}
+                  required
                 />
               </Form.Group>
             </Col>
@@ -122,31 +155,16 @@ const ReviewForm = () => {
               </Form.Group>
             </Col>
           </Row>
-          <Button className="mt-3" variant="primary" type="submit">
+          <Button
+            className="mt-3"
+            variant="primary"
+            type="submit"
+            disabled={!isFormValid()} // Disable submit button if form is invalid
+          >
             Submit Review
           </Button>
         </Form>
       </Container>
-      {/* Spinner */}
-      {isLoading && (
-        <div
-          style={{
-            position: "fixed",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            zIndex: "2",
-          }}
-        >
-          <Spinner
-            thickness="4px"
-            speed="0.65s"
-            emptyColor="gray.200"
-            color="blue.500"
-            size="xl"
-          />
-        </div>
-      )}
     </>
   );
 };

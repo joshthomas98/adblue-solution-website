@@ -28,10 +28,7 @@ const Footer = () => {
                   <div className="copywrite-text mb-5 mt-3 text-center">
                     <p className="mb-0">
                       Designed and built by <i className="lni-heart mr-1" />
-                      <a
-                        className="ml-1"
-                        href="https://wrapbootstrap.com/user/DesigningWorld"
-                      >
+                      <a className="ml-1" href="http://acorn.digital/">
                         Tech Minds Consulting
                       </a>
                     </p>
@@ -54,16 +51,16 @@ const Footer = () => {
                 <div className="footer_menu text-center text-sm-left">
                   <ul>
                     <li>
-                      <a href="/about">Services</a>
+                      <a href="/services">Services</a>
                     </li>
                     <li>
-                      <a href="#">About</a>
+                      <a href="about">About</a>
                     </li>
                     <li>
-                      <a href="#">Contact</a>
+                      <a href="/contact">Contact</a>
                     </li>
                     <li>
-                      <a href="#">Reviews</a>
+                      <a href="reviewslist">Reviews</a>
                     </li>
                   </ul>
                 </div>
