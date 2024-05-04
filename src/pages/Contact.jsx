@@ -9,6 +9,7 @@ const Contact = () => {
 
   const formRef = useRef(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [formInvalid, setFormInvalid] = useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -30,8 +31,33 @@ const Contact = () => {
       )
       .finally(() => {
         setIsLoading(false); // Set isLoading back to false after API call completes
-        e.target.reset();
+        formRef.current.reset();
+        setFormInvalid(true); // Reset form validation state
       });
+  };
+
+  const handleFormChange = () => {
+    const formFields = formRef.current.elements;
+    let isFormInvalid = false;
+
+    // Check if any field is empty
+    for (let field of formFields) {
+      if (
+        (field.tagName === "INPUT" || field.tagName === "TEXTAREA") &&
+        !field.value.trim()
+      ) {
+        isFormInvalid = true;
+        break;
+      }
+    }
+
+    // Check if the subject field is empty
+    const subjectField = formFields.namedItem("subject");
+    if (subjectField && !subjectField.value.trim()) {
+      isFormInvalid = true;
+    }
+
+    setFormInvalid(isFormInvalid);
   };
 
   return (
@@ -77,7 +103,7 @@ const Contact = () => {
               Got any questions about us or the services we provide?
               <br />
               Get in touch with us by either sending us a message below or
-              giving us a call and we'll be happy to help.
+              giving us a call, and we'll be happy to help.
             </p>
           </div>
           <div style={{ marginLeft: "170px" }}>
@@ -90,7 +116,8 @@ const Contact = () => {
                     name="enq"
                     method="post"
                     action="contact.php"
-                    onSubmit="return validation();"
+                    onSubmit={sendEmail}
+                    onChange={handleFormChange} // Attach handleFormChange to onChange event
                   >
                     <div className="row">
                       <div className="form-group col-md-6 mb-3">
@@ -135,7 +162,7 @@ const Contact = () => {
                           type="submit"
                           className="btn btn-contact-bg rounded-pill"
                           style={{ maxWidth: "150px" }}
-                          onClick={sendEmail}
+                          disabled={formInvalid}
                         >
                           Send Message
                         </Button>
