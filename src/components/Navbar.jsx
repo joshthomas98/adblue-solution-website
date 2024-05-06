@@ -1,6 +1,5 @@
 import React from "react";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -13,35 +12,48 @@ function NavbarComponent() {
     navigate("/services");
   };
 
+  const goToWhatsapp = () => {
+    window.open("https://wa.me/country_code_and_your_phone_number", "_blank");
+  };
+
   const linkStyle = {
     fontFamily: "'Red Hat Display', sans-serif",
     fontSize: "1.3rem",
     whiteSpace: "nowrap", // Added this line to prevent wrapping
   };
 
+  const whatsappContainerStyle = {
+    position: "fixed",
+    bottom: "20px", // Adjust the bottom position as needed
+    right: "20px", // Adjust the right position as needed
+    zIndex: "9999", // Ensure it appears above other content
+    width: "75px", // Adjust the size as needed
+    height: "75px", // Adjust the size as needed
+    borderRadius: "50%", // Make it circular
+    backgroundColor: "#25d366", // WhatsApp green color
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
   return (
     <div className="px-5">
       <div className="pb-2">
-        <div
-          className="d-flex justify-content-start align-items-center pt-3"
-          style={{ marginBottom: "-35px" }}
-        >
-          <div className="d-none d-lg-block">
-            <a
-              href="https://wa.link/adbluesolution"
-              target="blank"
-              style={{ color: "black", display: "flex", alignItems: "center" }}
-            >
-              <FontAwesomeIcon
-                className="mr-2"
-                style={{ paddingLeft: "18px" }}
-                icon={faWhatsapp}
-              />
-              <span className="px-2">https://wa.link/adbluesolution</span>
-            </a>
-          </div>
+        <div style={whatsappContainerStyle}>
+          <img
+            src="dist/assets/whatsapp-white-icon.png"
+            alt="WhatsApp Icon"
+            style={{
+              width: "50px",
+              height: "50px",
+              marginBottom: "2px",
+              backgroundColor: "transparent",
+              cursor: "pointer",
+            }}
+            onClick={goToWhatsapp}
+          />
         </div>
-        <div className="d-flex justify-content-end align-items-center pt-3">
+        <div className="d-flex justify-content-end align-items-center">
           <div className="d-none d-lg-block ml-lg-3">
             <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
             <span className="px-2" style={{ marginRight: "10px" }}>
