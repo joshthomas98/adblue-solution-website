@@ -55,7 +55,7 @@ function NavbarComponent() {
         </div>
         <div
           className="d-flex justify-content-end align-items-center lead pt-2"
-          style={{ marginBottom: "-10px" }}
+          style={{ marginBottom: "-9px" }}
         >
           <div className="d-none d-lg-block ml-lg-3">
             <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
