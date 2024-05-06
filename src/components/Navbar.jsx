@@ -18,7 +18,7 @@ function NavbarComponent() {
 
   const linkStyle = {
     fontFamily: "'Red Hat Display', sans-serif",
-    fontSize: "1.3rem",
+    fontSize: "1.4rem",
     whiteSpace: "nowrap", // Added this line to prevent wrapping
   };
 
@@ -113,7 +113,6 @@ function NavbarComponent() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <hr style={{ borderTop: "2px solid black", margin: 0 }} />
     </div>
   );
 }
