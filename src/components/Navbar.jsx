@@ -78,7 +78,7 @@ function NavbarComponent() {
           <img
             src="/assets/LOGO WHITE NO BG.png"
             alt="LOGO"
-            style={{ width: "40%", marginTop: "-25px" }} // Set initial width to 100%
+            style={{ width: "40%", marginTop: "-25px" }}
           />
         </Navbar.Brand>
         <Navbar.Toggle
