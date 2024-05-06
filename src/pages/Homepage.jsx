@@ -199,7 +199,9 @@ const Homepage = () => {
                 keeping your fleet running efficiently and responsibly.
               </p>
             </Container>
-            <p className="lead pt-3">Contact us today to get a quote!</p>
+            <p className="lead pt-3" style={{ fontWeight: "bold" }}>
+              Contact us today to get a quote!
+            </p>
             <HomepageContact />
           </Container>
         </section>

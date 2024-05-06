@@ -78,19 +78,19 @@ function NavbarComponent() {
           <img
             src="/assets/LOGO WHITE NO BG.png"
             alt="LOGO"
-            className="w-25 mx-3 pb-lg-2"
+            style={{ width: "40%", marginTop: "-25px" }} // Set initial width to 100%
           />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           style={{
             marginLeft: "auto",
-            marginTop: "-40px",
+            marginTop: "-50px",
             marginBottom: "10px",
           }}
         />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto">
+          <Nav className="mx-auto pt-3">
             <Nav.Link href="/" style={linkStyle}>
               Home
             </Nav.Link>
