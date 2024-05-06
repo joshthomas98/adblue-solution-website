@@ -58,10 +58,15 @@ function NavbarComponent() {
           style={{ marginBottom: "-9px" }}
         >
           <div className="d-none d-lg-block ml-lg-3">
-            <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
-            <span className="px-2" style={{ marginRight: "10px" }}>
-              info@adbluesolution.co.uk
-            </span>
+            <a
+              href="mailto:info@adbluesolution.co.uk"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
+              <span className="px-2" style={{ marginRight: "10px" }}>
+                info@adbluesolution.co.uk
+              </span>
+            </a>
             <FontAwesomeIcon className="mr-2" icon={faPhone} />
             <span className="px-2">07944162191</span>
           </div>
