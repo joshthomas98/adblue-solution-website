@@ -13,7 +13,7 @@ function NavbarComponent() {
   };
 
   const goToWhatsapp = () => {
-    window.open("https://wa.me/country_code_and_your_phone_number", "_blank");
+    window.open("https://wa.me/+447944162191", "_blank");
   };
 
   const linkStyle = {
@@ -53,7 +53,10 @@ function NavbarComponent() {
             onClick={goToWhatsapp}
           />
         </div>
-        <div className="d-flex justify-content-end align-items-center">
+        <div
+          className="d-flex justify-content-end align-items-center lead pt-2"
+          style={{ marginBottom: "-10px" }}
+        >
           <div className="d-none d-lg-block ml-lg-3">
             <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
             <span className="px-2" style={{ marginRight: "10px" }}>

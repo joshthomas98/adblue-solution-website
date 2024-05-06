@@ -11,6 +11,13 @@ const myfont = {
 };
 
 const Homepage = () => {
+  const handleGetQuoteClick = () => {
+    const contactSection = document.getElementById("contactSection");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
+  };
+
   return (
     <>
       <div style={myfont}>
@@ -18,16 +25,19 @@ const Homepage = () => {
           className="hero"
           style={{ position: "relative", overflow: "hidden" }}
         >
-          <img
-            src="dist/assets/F-PACE DASH done.png"
-            alt=""
-            style={{ width: "100%", height: "auto", display: "block" }}
-          />
+          <div>
+            <img
+              src="dist/assets/F-PACE DASH done.png"
+              alt=""
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
+          </div>
+
           <div
             className="text-container"
             style={{
               position: "absolute",
-              top: "12%",
+              top: "9%",
               left: "50%",
               transform: "translate(-50%, -50%)",
               textAlign: "center",
@@ -40,7 +50,7 @@ const Homepage = () => {
             <h1
               style={{
                 fontSize: "5vw",
-                fontFamily: "Digital-7", // Apply the Digital-7 font family
+                fontFamily: "Digital-7",
                 background: "none",
                 "@media (maxWidth: 768px)": { fontSize: "4vw" },
                 "@media (maxWidth: 576px)": { fontSize: "3vw" },
@@ -49,9 +59,46 @@ const Homepage = () => {
               Welcome To Adblue Solution
             </h1>
           </div>
+
+          <div
+            style={{
+              position: "absolute",
+              top: "19%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              zIndex: "1",
+              backgroundColor: "transparent",
+            }}
+          >
+            <Button
+              href="/contact"
+              style={{
+                fontSize: "20px",
+                padding: "8px 16px",
+                borderRadius: "10px",
+                marginRight: "20px",
+              }}
+            >
+              Call Us
+            </Button>
+
+            <Button
+              onClick={handleGetQuoteClick}
+              style={{
+                fontSize: "20px",
+                padding: "8px 16px",
+                borderRadius: "10px",
+              }}
+            >
+              Get a Quote
+            </Button>
+          </div>
         </section>
 
-        <section className="home-about container py-5">
+        <section className="home-about container py-5" id="aboutSection">
           <h1 className="pb-1 text-center">It's What We Do</h1>
           <Row className="align-items-center">
             <Col md={6} className="text-md-start text-center">
@@ -97,6 +144,7 @@ const Homepage = () => {
         <section
           className="homepage-cards py-5 text-center"
           style={{ backgroundColor: "#1D1D1C" }}
+          id="contactSection"
         >
           <Container className="py-5">
             <h1>So What Is Adblue?</h1>
@@ -151,14 +199,12 @@ const Homepage = () => {
                 keeping your fleet running efficiently and responsibly.
               </p>
             </Container>
-            <p className="lead pt-3">
-              Contact us today to learn more and book your appointment!
-            </p>
+            <p className="lead pt-3">Contact us today to get a quote!</p>
             <HomepageContact />
           </Container>
         </section>
 
-        <section className="pb-3" id="functionality boxes">
+        <section className="pb-3" id="functionalitySection">
           <Container>
             <Row className="text-center g-4 pb-2">
               <Col md>
@@ -220,6 +266,7 @@ const Homepage = () => {
         <section
           className="homepage-cards py-5"
           style={{ backgroundColor: "#1D1D1C" }}
+          id="cardsSection"
         >
           <HomepageCards />
         </section>
