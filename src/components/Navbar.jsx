@@ -113,6 +113,7 @@ function NavbarComponent() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <hr style={{ borderTop: "2px solid black", margin: 0 }} />
     </div>
   );
 }
