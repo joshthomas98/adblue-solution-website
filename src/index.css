@@ -19,6 +19,14 @@
   font-style: normal;
 }
 
+/* DASH FONT */
+
+@font-face {
+  font-family: "Digital-7";
+  src: url("src/dash-font/digital-7.ttf") format("truetype");
+  /* Add more src lines if you have other font formats */
+}
+
 /* NAVBAR */
 
 /* Custom CSS */

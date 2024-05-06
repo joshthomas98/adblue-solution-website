@@ -3,19 +3,17 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import BasicSpinner from "../components/Spinner";
+import { useMediaQuery } from "@material-ui/core";
 
 const Contact = () => {
   const navigate = useNavigate();
-
   const formRef = useRef(null);
   const [isLoading, setIsLoading] = useState(false);
   const [formInvalid, setFormInvalid] = useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     setIsLoading(true);
-
     emailjs
       .sendForm("service_d38c8w8", "template_66mn5h7", formRef.current, {
         publicKey: "JdEmvpiqWHQDGE7TP",
@@ -30,9 +28,9 @@ const Contact = () => {
         }
       )
       .finally(() => {
-        setIsLoading(false); // Set isLoading back to false after API call completes
+        setIsLoading(false);
         formRef.current.reset();
-        setFormInvalid(true); // Reset form validation state
+        setFormInvalid(true);
       });
   };
 
@@ -40,7 +38,6 @@ const Contact = () => {
     const formFields = formRef.current.elements;
     let isFormInvalid = false;
 
-    // Check if any field is empty
     for (let field of formFields) {
       if (
         (field.tagName === "INPUT" || field.tagName === "TEXTAREA") &&
@@ -51,7 +48,6 @@ const Contact = () => {
       }
     }
 
-    // Check if the subject field is empty
     const subjectField = formFields.namedItem("subject");
     if (subjectField && !subjectField.value.trim()) {
       isFormInvalid = true;
@@ -60,10 +56,11 @@ const Contact = () => {
     setFormInvalid(isFormInvalid);
   };
 
+  const isSmScreen = useMediaQuery("(max-width: 959px)");
+
   return (
     <>
       {isLoading && (
-        // Show a semi-transparent background and a spinner while loading
         <div
           style={{
             position: "fixed",
@@ -106,9 +103,9 @@ const Contact = () => {
               giving us a call, and we'll be happy to help.
             </p>
           </div>
-          <div style={{ marginLeft: "170px" }}>
+          <div className="d-sm-center d-md-NORMAL">
             <div className="row">
-              <div className="col-lg-7">
+              <div className="col-lg-8 px-lg-5">
                 <div className="contact">
                   <form
                     ref={formRef}
@@ -117,7 +114,7 @@ const Contact = () => {
                     method="post"
                     action="contact.php"
                     onSubmit={sendEmail}
-                    onChange={handleFormChange} // Attach handleFormChange to onChange event
+                    onChange={handleFormChange}
                   >
                     <div className="row">
                       <div className="form-group col-md-6 mb-3">
@@ -171,44 +168,102 @@ const Contact = () => {
                   </form>
                 </div>
               </div>
-              <div className="col-lg-5 pt-md-4">
-                <div className="single_address">
-                  <i className="fa fa-envelope" />
-                  <h4>Send your message</h4>
-                  <p>info@adbluesolution.co.uk</p>
-                </div>
-                <div className="single_address">
-                  <i className="fa fa-phone" />
-                  <h4>Call us on</h4>
-                  <p>07944162191</p>
-                </div>
-                <div className="single_address">
-                  <a
-                    href="https://wa.link/adbluesolution"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    <i className="fa fa-whatsapp" />
-                    <h4 className="text-dark">Contact us on WhatsApp</h4>
-                    <p className="text-dark">https://wa.link/adbluesolution</p>
-                  </a>
-                </div>
-                <div className="single_address">
-                  <i className="fa fa-clock-o" />
-                  <h4>Work Time</h4>
-                  <p>
-                    Mon - Fri: 09.00 - 17.00. <br />
-                    Sat: 10.00 - 14.00
-                  </p>
-                </div>
+              <div className="col-lg-4 pt-md-5 pt-lg-0">
+                {isSmScreen ? (
+                  <div className="d-sm-flex flex-column align-items-center justify-content-center justify-content-lg-start text-center">
+                    <div className="single_address">
+                      <div className="d-flex flex-column align-items-center">
+                        <i
+                          className="fa fa-envelope"
+                          style={{ marginLeft: "15px", marginTop: "-20px" }}
+                        />
+                        <h4>Send your message</h4>
+                      </div>
+                      <p>info@adbluesolution.co.uk</p>
+                    </div>
+                    <div className="single_address">
+                      <div className="d-flex flex-column align-items-center">
+                        <i
+                          className="fa fa-phone"
+                          style={{ marginLeft: "15px" }}
+                        />
+                        <h4>Call us on</h4>
+                      </div>
+                      <p>07944162191</p>
+                    </div>
+                    <div className="single_address">
+                      <a
+                        href="https://wa.link/adbluesolution"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <div className="d-flex flex-column align-items-center">
+                          <i
+                            className="fa fa-whatsapp"
+                            style={{ marginLeft: "15px" }}
+                          />
+                          <h4 className="text-dark">Contact us on WhatsApp</h4>
+                        </div>
+                        <p className="text-dark">
+                          https://wa.link/adbluesolution
+                        </p>
+                      </a>
+                    </div>
+                    <div className="single_address">
+                      <div className="d-flex flex-column align-items-center">
+                        <i
+                          className="fa fa-clock-o"
+                          style={{ marginLeft: "15px" }}
+                        />
+                        <h4>Work Time</h4>
+                      </div>
+                      <p>
+                        Mon - Fri: 09.00 - 17.00. <br />
+                        Sat: 10.00 - 14.00
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  <div>
+                    <div className="single_address">
+                      <i className="fa fa-envelope" />
+                      <h4>Send your message</h4>
+                      <p>info@adbluesolution.co.uk</p>
+                    </div>
+                    <div className="single_address">
+                      <i className="fa fa-phone" />
+                      <h4>Call us on</h4>
+                      <p>07944162191</p>
+                    </div>
+                    <div className="single_address">
+                      <a
+                        href="https://wa.link/adbluesolution"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <i className="fa fa-whatsapp" />
+                        <h4 className="text-dark">Contact us on WhatsApp</h4>
+                        <p className="text-dark">
+                          https://wa.link/adbluesolution
+                        </p>
+                      </a>
+                    </div>
+                    <div className="single_address">
+                      <i className="fa fa-clock-o" />
+                      <h4>Work Time</h4>
+                      <p>
+                        Mon - Fri: 09.00 - 17.00. <br />
+                        Sat: 10.00 - 14.00
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
-              {/*- END COL */}
             </div>
           </div>
-          {/*- END ROW */}
         </div>
-        {/*- END CONTAINER */}
       </div>
     </>
   );

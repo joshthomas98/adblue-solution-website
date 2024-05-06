@@ -19,7 +19,7 @@ const Homepage = () => {
           style={{ position: "relative", overflow: "hidden" }}
         >
           <img
-            src="/assets/banner-2.jpeg"
+            src="dist/assets/F-PACE DASH done.png"
             alt=""
             style={{ width: "100%", height: "auto", display: "block" }}
           />
@@ -27,7 +27,7 @@ const Homepage = () => {
             className="text-container"
             style={{
               position: "absolute",
-              top: "20%",
+              top: "12%",
               left: "50%",
               transform: "translate(-50%, -50%)",
               textAlign: "center",
@@ -40,6 +40,7 @@ const Homepage = () => {
             <h1
               style={{
                 fontSize: "5vw",
+                fontFamily: "Digital-7", // Apply the Digital-7 font family
                 background: "none",
                 "@media (maxWidth: 768px)": { fontSize: "4vw" },
                 "@media (maxWidth: 576px)": { fontSize: "3vw" },
@@ -125,10 +126,10 @@ const Homepage = () => {
               <ul>
                 <li>30 Mile radius of:</li>
                 <ul>
-                  <li>Cardiff</li>
-                  <li>Worthing</li>
-                  <li>St Helens</li>
-                  <li>Bradford</li>
+                  <li style={{ paddingRight: "30px" }}>Cardiff</li>
+                  <li style={{ paddingRight: "30px" }}>Worthing</li>
+                  <li style={{ paddingRight: "30px" }}>St Helens</li>
+                  <li style={{ paddingRight: "30px" }}>Bradford</li>
                 </ul>
               </ul>
               <p>
@@ -159,7 +160,7 @@ const Homepage = () => {
 
         <section className="pb-3" id="functionality boxes">
           <Container>
-            <Row className="text-center g-4">
+            <Row className="text-center g-4 pb-2">
               <Col md>
                 <div className="homepage-card bg-secondary">
                   <div className="card-body text-center p-3">
