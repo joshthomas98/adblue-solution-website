@@ -76,10 +76,11 @@ const Homepage = () => {
             <Button
               href="/contact"
               style={{
-                fontSize: "20px",
-                padding: "8px 16px",
+                fontSize: "1.4vw", // Proportionate font size
+                padding: "0.5vw 1vw", // Proportionate padding
                 borderRadius: "10px",
-                marginRight: "20px",
+                marginRight: "1vw", // Proportionate margin
+                minWidth: "100px", // Fixed minimum width
               }}
             >
               Call Us
@@ -88,9 +89,10 @@ const Homepage = () => {
             <Button
               onClick={handleGetQuoteClick}
               style={{
-                fontSize: "20px",
-                padding: "8px 16px",
+                fontSize: "1.4vw", // Proportionate font size
+                padding: "0.5vw 1vw", // Proportionate padding
                 borderRadius: "10px",
+                minWidth: "100px", // Fixed minimum width
               }}
             >
               Get a Quote
