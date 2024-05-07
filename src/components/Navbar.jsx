@@ -54,7 +54,26 @@ function NavbarComponent() {
           />
         </div>
         <div
-          className="d-flex justify-content-end align-items-center lead pt-2"
+          className="d-flex justify-content-center align-items-center lead pt-2 pb-3"
+          style={{ marginBottom: "-9px" }}
+        >
+          <div className="d-lg-none ml-lg-3">
+            <a
+              href="mailto:info@adbluesolution.co.uk"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
+              <span className="px-2" style={{ marginRight: "10px" }}>
+                info@adbluesolution.co.uk
+              </span>
+            </a>
+            <FontAwesomeIcon className="mr-2" icon={faPhone} />
+            <span className="px-2">07944162191</span>
+          </div>
+        </div>
+
+        <div
+          className="d-flex justify-content-end align-items-center lead"
           style={{ marginBottom: "-9px" }}
         >
           <div className="d-none d-lg-block ml-lg-3">
@@ -74,7 +93,7 @@ function NavbarComponent() {
       </div>
 
       <Navbar
-        className="pt-sm-3 pt-lg-0"
+        className="pt-3 pb-0 pb-sm-1 pb-lg-0 pt-lg-0 pb-lg-2 pt-xl-1"
         collapseOnSelect
         expand="lg"
         style={{ marginTop: "-4px" }}
@@ -83,7 +102,7 @@ function NavbarComponent() {
           <img
             src="/assets/LOGO WHITE NO BG.png"
             alt="LOGO"
-            style={{ width: "40%", marginTop: "-25px" }}
+            style={{ width: "50%", marginTop: "-25px" }}
           />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -95,7 +114,7 @@ function NavbarComponent() {
           }}
         />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto pt-3">
+          <Nav className="mx-auto">
             <Nav.Link href="/" style={linkStyle}>
               Home
             </Nav.Link>

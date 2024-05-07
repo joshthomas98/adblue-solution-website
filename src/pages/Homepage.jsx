@@ -34,7 +34,7 @@ const Homepage = () => {
           </div>
 
           <div
-            className="text-container mt-xs-3 mt-lg-0"
+            className="text-container pt-3 pt-sm-3 pt-md-3 pt-lg-0"
             style={{
               position: "absolute",
               top: "9%",
@@ -60,6 +60,7 @@ const Homepage = () => {
           </div>
 
           <div
+            className="pt-3 pt-sm-0"
             style={{
               position: "absolute",
               top: "19%",
