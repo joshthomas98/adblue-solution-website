@@ -20,7 +20,7 @@ const Footer = () => {
                   <img
                     src="/assets/LOGO WHITE NO BG.png"
                     alt="LOGO"
-                    className="w-75 mt-3 mx-3 mb-4"
+                    className="w-75 mx-3 mb-4"
                   />
                 </Center>
                 {/* Copywrite Text*/}
@@ -35,17 +35,17 @@ const Footer = () => {
                   </div>
                 </Center>
                 {/* Footer Social Area*/}
-                <Center className="pb-4">
+                <Center className="pb-5 pb-sm-4 pb-md-5">
                   <SocialMediaIcons />
                 </Center>
               </div>
             </div>
             {/* Single Widget*/}
             <div
-              className="col-12 col-sm-12 col-lg py-sm-4"
+              className="col-12 col-sm-12 col-lg"
               style={{ paddingRight: "50px" }}
             >
-              <div className="single-footer-widget section_padding_0_130">
+              <div className="single-footer-widget section_padding_0_130 pt-lg-0">
                 {/* Widget Title*/}
                 <h5 className="widget-title text-center text-sm-left">
                   Quick Links
@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
             {/* Single Widget*/}
             <div
-              className="col-12 col-sm-12 col-lg py-sm-4"
+              className="col-12 col-sm-12 col-lg pt-4 pt-sm-3 pt-md-5 pt-lg-0"
               style={{ paddingRight: "50px" }}
             >
               <div className="single-footer-widget section_padding_0_130">
@@ -97,7 +97,7 @@ const Footer = () => {
             </div>
             {/* Single Widget*/}
             <div
-              className="col-12 col-sm-12 col-lg py-sm-4"
+              className="col-12 col-sm-12 col-lg pt-4 pt-sm-5 pt-md-5 pt-lg-0"
               style={{ paddingRight: "50px" }}
             >
               <div className="single-footer-widget section_padding_0_130">
@@ -113,7 +113,7 @@ const Footer = () => {
                       <a href="/privacypolicy">Privacy Policy</a>
                     </li>
                     <li>
-                      <a href="/about">Disclaimers</a>
+                      <a href="/disclaimer">Disclaimers</a>
                     </li>
                   </ul>
                 </div>

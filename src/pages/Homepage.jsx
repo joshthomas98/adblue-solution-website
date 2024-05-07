@@ -34,7 +34,7 @@ const Homepage = () => {
           </div>
 
           <div
-            className="text-container"
+            className="text-container mt-xs-3 mt-lg-0"
             style={{
               position: "absolute",
               top: "9%",
@@ -48,13 +48,11 @@ const Homepage = () => {
             }}
           >
             <h1
-              className="mt-sm-3 mt-lg-0"
+              className="mt-lg-3"
               style={{
                 fontSize: "5vw",
                 fontFamily: "Digital-7",
                 background: "none",
-                "@media (maxWidth: 768px)": { fontSize: "4vw" },
-                "@media (maxWidth: 576px)": { fontSize: "3vw" },
               }}
             >
               Welcome To Adblue Solution
@@ -78,11 +76,11 @@ const Homepage = () => {
               className="mt-sm-5 mt-lg-5"
               href="/contact"
               style={{
-                fontSize: "1.9vw", // Increased font size for better readability on small screens
-                padding: "1vw 1.5vw", // Increased padding for larger button size
+                fontSize: "1.9vw",
+                padding: "1vw 1.5vw",
                 borderRadius: "10px",
-                marginRight: "1vw", // Proportionate margin
-                minWidth: "120px", // Adjusted minimum width for better visibility
+                marginRight: "1vw",
+                minWidth: "120px",
               }}
             >
               Call Us
@@ -92,10 +90,10 @@ const Homepage = () => {
               className="mt-sm-5 mt-lg-5"
               onClick={handleGetQuoteClick}
               style={{
-                fontSize: "1.9vw", // Increased font size for better readability on small screens
-                padding: "1vw 1.5vw", // Increased padding for larger button size
+                fontSize: "1.9vw",
+                padding: "1vw 1.5vw",
                 borderRadius: "10px",
-                minWidth: "120px", // Adjusted minimum width for better visibility
+                minWidth: "120px",
               }}
             >
               Get a Quote
@@ -166,7 +164,7 @@ const Homepage = () => {
             <h3 className="pt-3 pb-3">Areas We Cover</h3>
             <Container className="d-flex justify-content-center">
               <img
-                className="img-fluid w-50"
+                className="img-fluid w-100"
                 src="/assets/araes we cover - map.svg"
                 alt="areas we cover map"
               />

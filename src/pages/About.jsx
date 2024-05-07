@@ -3,11 +3,11 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <section id="learn" className="p-5">
-        <h1 className="text-center pb-3">About Us</h1>
+      <section className="p-5">
+        <h1 className="text-center pb-3 pb-xl-4">About Us</h1>
         <div className="container">
           <div className="row align-items-center justify-content-between">
-            <div className="col-md">
+            <div className="col-xl">
               <img
                 src="/assets/Can man  habd on hip and thumbs up good hand black background.png"
                 className="img-fluid"
@@ -16,8 +16,8 @@ const About = () => {
             </div>
 
             {/*- Section 1 */}
-            <div className="col-md pt-sm-4 p-lg-5">
-              <h2>Who We Are</h2>
+            <div className="col-md pt-4 pt-xs-2 pt-lg-4">
+              <h2 className="pb-2">Who We Are</h2>
               <p className="lead">
                 Adblue Solution are a group of Adblue delete specialists based
                 throughout the UK.
@@ -59,17 +59,17 @@ const About = () => {
       </section>
 
       {/*- Section 2 */}
-      <section id="learn" className="p-5 bg-dark text-dark">
+      <section className="p-5 bg-dark text-dark">
         <div className="container">
           <div className="row align-items-center justify-content-between">
-            <div className="col-md py-sm-4 px-sm-4 p-lg-5 order-md-last">
+            <div className="col-xl py-4 p-sm-4 pt-md-1 p-lg-5 order-md-last">
               <img
                 src="/assets/laptop and flex on bmw engine.svg"
                 className="img-fluid"
                 alt=""
               />
             </div>
-            <div className="col-md pt-sm-0 pb-sm-4 px-sm-5 p-lg-5">
+            <div className="col-md pt-2 px-3 pt-sm-0 pb-sm-2 px-sm-4 pt-md-4 py-lg-4">
               <h2 className="pb-3">AdBlue Solution</h2>
               <p>
                 At Adblue Solution, with over 15 years in the Engine ECU
@@ -108,17 +108,17 @@ const About = () => {
       </section>
 
       {/*- Section 3 */}
-      <section id="learn" className="py-sm-4 text-dark">
+      <section className="py-sm-4 text-dark">
         <div className="container">
           <div className="row align-items-center justify-content-between">
-            <div className="col-md pb-sm-3 px-sm-4 p-lg-5">
+            <div className="col-xl pt-4 px-4 p-lg-5">
               <img
                 src="/assets/CAT CONVERTER.png"
                 className="img-fluid"
                 alt=""
               />
             </div>
-            <div className="col-md py-sm-0 px-sm-4 p-lg-5">
+            <div className="col-lg pt-3 px-4 p-lg-5">
               <h2 className="pb-3">More AdBlue Facts</h2>
               <p>
                 AdBlue – the double-edged sword of emission reduction! Sure, it
@@ -141,35 +141,6 @@ const About = () => {
                 eco-warrior's weapon of choice, it's a battlefield littered with
                 expenses, inconveniences, and unreliable twists and turns.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/*- Section 4 */}
-      <section id="learn" className="p-5 bg-dark text-center">
-        <div className="container">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-md p-5">
-              <h2 className="pb-3">Legal Disclaimer and Guidance</h2>
-              <div className="container">
-                <p>
-                  <span style={{ fontWeight: "bold" }}>DISCLAIMER:</span> Adblue
-                  Solution does not advocate or endorse the removal of AdBlue
-                  systems from vehicles without proper consideration of legal
-                  regulations. We encourage our customers to prioritize
-                  compliance with emissions standards and to seek professional
-                  advice when considering modifications to their vehicles.
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold" }}>Final Note:</span> The
-                  information provided here is for general guidance purposes
-                  only and should not be construed as legal advice. It is your
-                  responsibility to conduct thorough research and consult with
-                  appropriate authorities to ensure compliance with all
-                  applicable laws and regulations.
-                </p>
-              </div>
             </div>
           </div>
         </div>

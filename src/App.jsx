@@ -17,6 +17,7 @@ import FaqAccordion from "./pages/Faqs";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import BasicSpinner from "./components/Spinner";
+import Disclaimer from "./pages/Disclaimer";
 
 const App = () => {
   return (
@@ -57,6 +58,8 @@ const App = () => {
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
 
           <Route path="/spinner" element={<BasicSpinner />} />
+
+          <Route path="/disclaimer" element={<Disclaimer />} />
         </Routes>
         <Footer />
       </ServicesProvider>
