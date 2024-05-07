@@ -211,7 +211,7 @@ const Homepage = () => {
           </Container>
         </section>
 
-        <section className="pb-3" id="functionalitySection">
+        <section className="pb-3 mt-5" id="functionalitySection">
           <Container>
             <Row className="text-center g-4 pb-2">
               <Col md>

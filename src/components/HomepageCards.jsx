@@ -279,7 +279,7 @@ const HomepageCards = () => {
       </div>
 
       <div
-        className="text-center pt-3 pb-4"
+        className="text-center pt-3 pb-1"
         style={{ backgroundColor: "#1D1D1C" }}
       >
         <Button href="/reviewslist">Go To Reviews</Button>
