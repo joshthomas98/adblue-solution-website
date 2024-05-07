@@ -16,7 +16,7 @@ const About = () => {
             </div>
 
             {/*- Section 1 */}
-            <div className="col-md p-5">
+            <div className="col-md pt-sm-4 p-lg-5">
               <h2>Who We Are</h2>
               <p className="lead">
                 Adblue Solution are a group of Adblue delete specialists based
@@ -62,15 +62,14 @@ const About = () => {
       <section id="learn" className="p-5 bg-dark text-dark">
         <div className="container">
           <div className="row align-items-center justify-content-between">
-            <div className="col-md p-5 order-md-last">
+            <div className="col-md py-sm-4 px-sm-4 p-lg-5 order-md-last">
               <img
                 src="/assets/laptop and flex on bmw engine.svg"
                 className="img-fluid"
                 alt=""
-                style={{ marginLeft: "12px" }}
               />
             </div>
-            <div className="col-md p-5">
+            <div className="col-md pt-sm-0 pb-sm-4 px-sm-5 p-lg-5">
               <h2 className="pb-3">AdBlue Solution</h2>
               <p>
                 At Adblue Solution, with over 15 years in the Engine ECU
@@ -109,18 +108,17 @@ const About = () => {
       </section>
 
       {/*- Section 3 */}
-      <section id="learn" className="p-5 text-dark">
+      <section id="learn" className="py-sm-4 text-dark">
         <div className="container">
           <div className="row align-items-center justify-content-between">
-            <div className="col-md p-5">
+            <div className="col-md pb-sm-3 px-sm-4 p-lg-5">
               <img
                 src="/assets/CAT CONVERTER.png"
                 className="img-fluid"
                 alt=""
-                style={{ marginLeft: "12px" }}
               />
             </div>
-            <div className="col-md p-5">
+            <div className="col-md py-sm-0 px-sm-4 p-lg-5">
               <h2 className="pb-3">More AdBlue Facts</h2>
               <p>
                 AdBlue – the double-edged sword of emission reduction! Sure, it
