@@ -98,7 +98,7 @@ const HomepageCards = () => {
               </div>
             </div>
           </div>
-          <div className="col-md px-4">
+          <div className="col-md">
             <div
               className="card bg-dark text-light"
               style={{ backgroundColor: "#373737" }}
@@ -180,7 +180,7 @@ const HomepageCards = () => {
               </div>
             </div>
           </div>
-          <div className="col-md px-4 mb-sm-4">
+          <div className="col-md px-4 mb-sm-4 pb-2">
             <div
               className="card bg-dark text-light"
               style={{ backgroundColor: "#373737" }}

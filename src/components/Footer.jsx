@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="footer_area section_padding_130_0 mt-5">
+      <footer className="footer_area section_padding_130_0">
         <div className="container">
           <div className="row">
             {/* Single Widget*/}
