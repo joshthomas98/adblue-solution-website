@@ -98,7 +98,7 @@ const HomepageCards = () => {
               </div>
             </div>
           </div>
-          <div className="col-md">
+          <div className="col-md px-4">
             <div
               className="card bg-dark text-light"
               style={{ backgroundColor: "#373737" }}

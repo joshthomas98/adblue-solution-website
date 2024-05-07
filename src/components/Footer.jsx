@@ -41,7 +41,10 @@ const Footer = () => {
               </div>
             </div>
             {/* Single Widget*/}
-            <div className="col-12 col-sm-12 col-lg py-sm-4">
+            <div
+              className="col-12 col-sm-12 col-lg py-sm-4"
+              style={{ paddingRight: "50px" }}
+            >
               <div className="single-footer-widget section_padding_0_130">
                 {/* Widget Title*/}
                 <h5 className="widget-title text-center text-sm-left">
@@ -67,7 +70,10 @@ const Footer = () => {
               </div>
             </div>
             {/* Single Widget*/}
-            <div className="col-12 col-sm-12 col-lg py-sm-4">
+            <div
+              className="col-12 col-sm-12 col-lg py-sm-4"
+              style={{ paddingRight: "50px" }}
+            >
               <div className="single-footer-widget section_padding_0_130">
                 {/* Widget Title*/}
                 <h5 className="widget-title text-center text-sm-left">
@@ -90,7 +96,10 @@ const Footer = () => {
               </div>
             </div>
             {/* Single Widget*/}
-            <div className="col-12 col-sm-12 col-lg py-sm-4">
+            <div
+              className="col-12 col-sm-12 col-lg py-sm-4"
+              style={{ paddingRight: "50px" }}
+            >
               <div className="single-footer-widget section_padding_0_130">
                 {/* Widget Title*/}
                 <h5 className="widget-title text-center text-sm-left">Legal</h5>

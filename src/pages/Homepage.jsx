@@ -48,6 +48,7 @@ const Homepage = () => {
             }}
           >
             <h1
+              className="mt-sm-3 mt-lg-0"
               style={{
                 fontSize: "5vw",
                 fontFamily: "Digital-7",
@@ -74,7 +75,7 @@ const Homepage = () => {
             }}
           >
             <Button
-              className="mt-sm-4 mt-lg-5"
+              className="mt-sm-5 mt-lg-5"
               href="/contact"
               style={{
                 fontSize: "1.9vw", // Increased font size for better readability on small screens
@@ -88,7 +89,7 @@ const Homepage = () => {
             </Button>
 
             <Button
-              className="mt-sm-4 mt-lg-5"
+              className="mt-sm-5 mt-lg-5"
               onClick={handleGetQuoteClick}
               style={{
                 fontSize: "1.9vw", // Increased font size for better readability on small screens
@@ -176,12 +177,12 @@ const Homepage = () => {
                 our coverage in due course!
               </p>
               <ul>
-                <li>30 Mile radius of:</li>
+                <li style={{ paddingRight: "30px" }}>30 Mile radius of:</li>
                 <ul>
-                  <li style={{ paddingRight: "30px" }}>Cardiff</li>
-                  <li style={{ paddingRight: "30px" }}>Worthing</li>
-                  <li style={{ paddingRight: "30px" }}>St Helens</li>
-                  <li style={{ paddingRight: "30px" }}>Bradford</li>
+                  <li style={{ paddingRight: "70px" }}>Cardiff</li>
+                  <li style={{ paddingRight: "70px" }}>Worthing</li>
+                  <li style={{ paddingRight: "70px" }}>St Helens</li>
+                  <li style={{ paddingRight: "70px" }}>Bradford</li>
                 </ul>
               </ul>
               <p>
