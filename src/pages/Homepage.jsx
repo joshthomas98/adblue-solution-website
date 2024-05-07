@@ -74,25 +74,27 @@ const Homepage = () => {
             }}
           >
             <Button
+              className="mt-sm-4 mt-lg-5"
               href="/contact"
               style={{
-                fontSize: "1.4vw", // Proportionate font size
-                padding: "0.5vw 1vw", // Proportionate padding
+                fontSize: "1.9vw", // Increased font size for better readability on small screens
+                padding: "1vw 1.5vw", // Increased padding for larger button size
                 borderRadius: "10px",
                 marginRight: "1vw", // Proportionate margin
-                minWidth: "100px", // Fixed minimum width
+                minWidth: "120px", // Adjusted minimum width for better visibility
               }}
             >
               Call Us
             </Button>
 
             <Button
+              className="mt-sm-4 mt-lg-5"
               onClick={handleGetQuoteClick}
               style={{
-                fontSize: "1.4vw", // Proportionate font size
-                padding: "0.5vw 1vw", // Proportionate padding
+                fontSize: "1.9vw", // Increased font size for better readability on small screens
+                padding: "1vw 1.5vw", // Increased padding for larger button size
                 borderRadius: "10px",
-                minWidth: "100px", // Fixed minimum width
+                minWidth: "120px", // Adjusted minimum width for better visibility
               }}
             >
               Get a Quote
