@@ -41,7 +41,7 @@ function NavbarComponent() {
       <div className="pb-2">
         <div style={whatsappContainerStyle}>
           <img
-            src="dist/assets/whatsapp-white-icon.png"
+            src="/assets/whatsapp-white-icon.png"
             alt="WhatsApp Icon"
             style={{
               width: "50px",

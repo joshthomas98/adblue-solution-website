@@ -27,7 +27,7 @@ const Homepage = () => {
         >
           <div>
             <img
-              src="dist/assets/F-PACE DASH done.png"
+              src="/assets/F-PACE DASH done.png"
               alt=""
               style={{ width: "100%", height: "auto", display: "block" }}
             />
