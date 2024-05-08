@@ -168,7 +168,7 @@ const Contact = () => {
                   </form>
                 </div>
               </div>
-              <div className="col-lg-4 pt-md-5 pt-lg-0">
+              <div className="col-lg-4 pb-5 pt-0 pt-md-5 pt-lg-0">
                 {isSmScreen ? (
                   <div className="d-sm-flex flex-column align-items-center justify-content-center justify-content-lg-start text-center">
                     <div className="single_address">
@@ -198,7 +198,7 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
-                        <div className="d-flex flex-column align-items-center">
+                        <div className="d-flex flex-column align-items-center pt-2">
                           <i
                             className="fa fa-whatsapp"
                             style={{ marginLeft: "15px" }}
@@ -211,7 +211,7 @@ const Contact = () => {
                       </a>
                     </div>
                     <div className="single_address">
-                      <div className="d-flex flex-column align-items-center">
+                      <div className="d-flex flex-column align-items-center pt-2">
                         <i
                           className="fa fa-clock-o"
                           style={{ marginLeft: "15px" }}
