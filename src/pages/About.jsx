@@ -59,10 +59,10 @@ const About = () => {
       </section>
 
       {/*- Section 2 */}
-      <section className="p-5 bg-dark text-dark">
+      <section className="py-4 px-4 bg-dark text-dark">
         <div className="container">
           <div className="row align-items-center justify-content-between">
-            <div className="col-xl py-4 p-sm-4 pt-md-1 p-lg-5 order-md-last">
+            <div className="col-xl py-4 p-sm-4 pt-md-0 order-md-last">
               <img
                 src="/assets/laptop and flex on bmw engine.svg"
                 className="img-fluid"
@@ -108,7 +108,7 @@ const About = () => {
       </section>
 
       {/*- Section 3 */}
-      <section className="py-sm-4 text-dark">
+      <section className="pb-5 text-dark">
         <div className="container">
           <div className="row align-items-center justify-content-between">
             <div className="col-xl pt-4 px-4 p-lg-5">
@@ -118,7 +118,7 @@ const About = () => {
                 alt=""
               />
             </div>
-            <div className="col-lg pt-3 px-4 p-lg-5">
+            <div className="col-lg pt-3 px-4 pt-lg-0 px-lg-5 pt-xl-4">
               <h2 className="pb-3">More AdBlue Facts</h2>
               <p>
                 AdBlue – the double-edged sword of emission reduction! Sure, it
