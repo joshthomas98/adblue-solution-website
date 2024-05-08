@@ -3,7 +3,7 @@ import { Container, Card } from "react-bootstrap";
 
 const PrivacyPolicy = () => {
   return (
-    <Container className="mt-4">
+    <Container className="mt-4 pb-5">
       <Card>
         <Card.Body>
           <Card.Title>Privacy Policy</Card.Title>
