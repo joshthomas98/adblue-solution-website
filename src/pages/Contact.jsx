@@ -58,6 +58,10 @@ const Contact = () => {
 
   const isSmScreen = useMediaQuery("(max-width: 959px)");
 
+  const handleCallButtonClick = () => {
+    window.location.href = "tel:07944162191";
+  };
+
   return (
     <>
       {isLoading && (
@@ -171,17 +175,26 @@ const Contact = () => {
               <div className="col-lg-4 pb-5 pt-0 pt-md-5 pt-lg-0">
                 {isSmScreen ? (
                   <div className="d-sm-flex flex-column align-items-center justify-content-center justify-content-lg-start text-center">
-                    <div className="single_address">
-                      <div className="d-flex flex-column align-items-center">
-                        <i
-                          className="fa fa-envelope"
-                          style={{ marginLeft: "15px", marginTop: "-20px" }}
-                        />
-                        <h4>Send your message</h4>
-                      </div>
-                      <p>info@adbluesolution.co.uk</p>
+                    <div className="single_address pt-4">
+                      <a
+                        href="mailto:info@adbluesolution.co.uk"
+                        style={{ color: "black", textDecoration: "none" }}
+                      >
+                        <div className="d-flex flex-column align-items-center">
+                          <i
+                            className="fa fa-envelope"
+                            style={{ marginLeft: "15px", marginTop: "-20px" }}
+                          />
+                          <h4>Send your message</h4>
+                        </div>
+                        <p>info@adbluesolution.co.uk</p>
+                      </a>
                     </div>
-                    <div className="single_address">
+                    <div
+                      className="single_address"
+                      onClick={handleCallButtonClick}
+                      style={{ cursor: "pointer" }}
+                    >
                       <div className="d-flex flex-column align-items-center">
                         <i
                           className="fa fa-phone"
@@ -198,7 +211,7 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
-                        <div className="d-flex flex-column align-items-center pt-2">
+                        <div className="d-flex flex-column align-items-center pt-1">
                           <i
                             className="fa fa-whatsapp"
                             style={{ marginLeft: "15px" }}
@@ -211,7 +224,7 @@ const Contact = () => {
                       </a>
                     </div>
                     <div className="single_address">
-                      <div className="d-flex flex-column align-items-center pt-2">
+                      <div className="d-flex flex-column align-items-center pt-1">
                         <i
                           className="fa fa-clock-o"
                           style={{ marginLeft: "15px" }}
