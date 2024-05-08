@@ -16,7 +16,7 @@ const HomepageCards = ({ reviews }) => {
     <>
       <div>
         <h2
-          className="text-center text-light pb-5"
+          className="text-center text-light pb-5 px-3 px-sm-5"
           style={{ backgroundColor: "#1D1D1C" }}
         >
           See What Our Recent Customers Had To Say
