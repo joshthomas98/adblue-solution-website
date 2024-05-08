@@ -27,6 +27,10 @@ const Homepage = () => {
     .sort((a, b) => b.createdAt - a.createdAt)
     .slice(0, 3); // Get only the three most recent reviews
 
+  const handleCallButtonClick = () => {
+    window.location.href = "tel:07944162191";
+  };
+
   return (
     <>
       <div style={myfont}>
@@ -84,7 +88,6 @@ const Homepage = () => {
           >
             <Button
               className="mt-sm-5 mt-lg-5"
-              href="/contact"
               style={{
                 fontSize: "1.9vw",
                 padding: "1vw 1.5vw",
@@ -92,6 +95,7 @@ const Homepage = () => {
                 marginRight: "1vw",
                 minWidth: "120px",
               }}
+              onClick={handleCallButtonClick}
             >
               Call Us
             </Button>
