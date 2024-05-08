@@ -132,7 +132,7 @@ const ReviewsList = () => {
             </div>
           </div>
 
-          <ListGroup>
+          <ListGroup className="pb-5">
             {reviews.map((review, index) => (
               <ListGroup.Item key={index} className="d-flex align-items-center">
                 <div className="circle-image">{review.name[0]}</div>
