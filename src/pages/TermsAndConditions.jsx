@@ -5,7 +5,7 @@ const TermsAndConditions = () => {
   return (
     <Container className="py-5">
       <h2 className="text-center mb-4">Terms &amp; Conditions</h2>
-      <div className="px-2">
+      <div className="px-2 ">
         <p>
           These terms and conditions outline the rules and regulations for the
           use of AdBlue Solution's Website, located at www.adbluesolution.com.
