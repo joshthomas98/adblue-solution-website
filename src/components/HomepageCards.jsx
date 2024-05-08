@@ -7,7 +7,7 @@ const HomepageCards = ({ reviews }) => {
   const truncateReview = (review) => {
     const words = review.split(" ");
     if (words.length > 14) {
-      return words.slice(0, 17).join(" ") + "...";
+      return words.slice(0, 12).join(" ") + "...";
     }
     return review;
   };
@@ -23,9 +23,9 @@ const HomepageCards = ({ reviews }) => {
         </h2>
       </div>
       <div className="container px-3">
-        <div className="row text-center g-4">
+        <div className="row text-center g-2 g-sm-0 g-md-3 pt-3 pt-sm-4 pt-md-2">
           {reviews.map((review, index) => (
-            <div key={index} className="col-md-4 pb-0">
+            <div key={index} className="col-md-4 pb-4">
               {" "}
               {/* Adjusted column size */}
               <div
