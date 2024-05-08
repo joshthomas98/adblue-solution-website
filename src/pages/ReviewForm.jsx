@@ -155,14 +155,16 @@ const ReviewForm = () => {
               </Form.Group>
             </Col>
           </Row>
-          <Button
-            className="mt-3"
-            variant="primary"
-            type="submit"
-            disabled={!isFormValid()} // Disable submit button if form is invalid
-          >
-            Submit Review
-          </Button>
+          <div className="text-center">
+            <Button
+              className="mt-4 mb-5"
+              variant="primary"
+              type="submit"
+              disabled={!isFormValid()} // Disable submit button if form is invalid
+            >
+              Submit Review
+            </Button>
+          </div>
         </Form>
       </Container>
     </>

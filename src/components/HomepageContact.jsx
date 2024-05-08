@@ -99,7 +99,7 @@ const Contact = () => {
           <div className="contact">
             <form
               ref={formRef}
-              className="form"
+              className="form px-3 px-md-3 pb-md-3 pb-lg-4 px-lg-0"
               name="enq"
               method="post"
               action="contact.php"
@@ -116,7 +116,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <div className="form-group col-md-6 pb-sm-3">
+                <div className="form-group col-md-6 mb-3">
                   <input
                     type="text"
                     name="vehicle_registration"
@@ -125,7 +125,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <div className="form-group col-md-6 pb-sm-3">
+                <div className="form-group col-md-6 mb-3">
                   <input
                     type="email"
                     name="email"
@@ -134,7 +134,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <div className="form-group col-md-6 pb-sm-3">
+                <div className="form-group col-md-6 mb-3">
                   <input
                     type="tel"
                     name="contact_number"
@@ -143,7 +143,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <div className="form-group col-md-12 pb-sm-3 d-flex justify-content-center">
+                <div className="form-group col-md-12 mb-3 d-flex justify-content-center">
                   <select name="area" className="form-control" required>
                     <option value="">Select Area</option>
                     <option value="1">Area 1</option>

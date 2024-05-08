@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWrench, faCar, faCogs } from "@fortawesome/free-solid-svg-icons";
 import HomepageCards from "../components/HomepageCards";
 import HomepageContact from "../components/HomepageContact";
+import { ReviewsContext } from "../context/ReviewsContext";
 
 const myfont = {
   fontFamily: "'Red Hat Display', sans-serif",
@@ -11,12 +12,20 @@ const myfont = {
 };
 
 const Homepage = () => {
+  const { reviews } = useContext(ReviewsContext);
+
   const handleGetQuoteClick = () => {
     const contactSection = document.getElementById("contactSection");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth", block: "end" });
     }
   };
+
+  // Filter reviews with 5 stars and sort by timestamp
+  const filteredReviews = reviews
+    .filter((review) => review.rating === 5)
+    .sort((a, b) => b.createdAt - a.createdAt)
+    .slice(0, 3); // Get only the three most recent reviews
 
   return (
     <>
@@ -150,7 +159,7 @@ const Homepage = () => {
           style={{ backgroundColor: "#1D1D1C" }}
           id="contactSection"
         >
-          <Container className="py-5">
+          <Container className="pt-5 pb-0 pb-md-4">
             <h1>So What Is Adblue?</h1>
             <Container>
               <p>
@@ -274,7 +283,7 @@ const Homepage = () => {
           style={{ backgroundColor: "#1D1D1C" }}
           id="cardsSection"
         >
-          <HomepageCards />
+          <HomepageCards reviews={filteredReviews} />
         </section>
       </div>
     </>

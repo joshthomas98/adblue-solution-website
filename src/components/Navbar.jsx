@@ -54,7 +54,7 @@ function NavbarComponent() {
           />
         </div>
         <div
-          className="d-flex justify-content-center align-items-center lead pt-2 pb-3"
+          className="d-flex justify-content-center align-items-center lead pt-2 pb-4"
           style={{ marginBottom: "-9px" }}
         >
           <div className="d-lg-none ml-lg-3">
@@ -66,9 +66,12 @@ function NavbarComponent() {
               <span className="px-2" style={{ marginRight: "10px" }}>
                 info@adbluesolution.co.uk
               </span>
+              <br />
             </a>
-            <FontAwesomeIcon className="mr-2" icon={faPhone} />
-            <span className="px-2">07944162191</span>
+            <div className="text-center">
+              <FontAwesomeIcon className="mr-2" icon={faPhone} />
+              <span className="px-2">07944162191</span>
+            </div>
           </div>
         </div>
 

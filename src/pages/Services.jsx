@@ -1,11 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.css";
 import { useServices } from "../context/ServicesContext";
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 
 const Services = () => {
-  // Consume the services data from the context
   const servicesData = useServices();
 
   return (
@@ -40,23 +38,16 @@ const Services = () => {
                   </div>
                   <div className="feature-content px-2 py-1">
                     <h5>{service.name}</h5>
-                    <p className="pb-1">{service.shortDescription}</p>
-                    {/* Conditionally render Link for the "Need Help?" service */}
-                    {service.id === 12 ? (
-                      <Link to="/contact">Learn More</Link>
-                    ) : (
-                      <Link
-                        to={{
-                          pathname: `/individual-service/${service.id}`,
-                          state: {
-                            name: service.name,
-                            description: service.description,
-                          },
-                        }}
-                      >
-                        Learn More
-                      </Link>
-                    )}
+                    <p className="pb-3">{service.shortDescription}</p>
+                    <a
+                      href={
+                        service.id === 12
+                          ? "/contact"
+                          : `/individual-service/${service.id}`
+                      }
+                    >
+                      <Button variant="primary">Learn More</Button>
+                    </a>
                   </div>
                 </div>
               </div>

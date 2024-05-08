@@ -7,7 +7,7 @@ const ReviewSubmitted = () => {
     <Container className="text-center">
       <h2 className="pt-4 pb-3">Review Submitted Successfully!</h2>
       <p>Thank you for your review. Your feedback is valuable to us.</p>
-      <Button as={Link} to="/" variant="primary" className="mt-3">
+      <Button as={Link} to="/" variant="primary" className="mt-3 mb-5">
         Go Back to Homepage
       </Button>
     </Container>
