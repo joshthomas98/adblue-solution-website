@@ -4,10 +4,10 @@ import { Accordion, Container } from "react-bootstrap";
 const FaqAccordion = () => {
   return (
     <>
-      <h2 className="text-dark text-center pt-4 pb-3">
+      <h2 className="text-dark text-center pt-4 pb-3 px-2">
         Frequently Asked Questions (FAQs)
       </h2>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center pb-5">
         <Accordion className="w-75">
           <Accordion.Item eventKey="0">
             <Accordion.Header>Who is Adblue Solution?</Accordion.Header>
