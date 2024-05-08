@@ -92,7 +92,7 @@ const Contact = () => {
         </div>
       )}
 
-      <div id="contact" className="contact-area section-padding">
+      <div id="contact" className="contact-area section-padding pb-4">
         <div className="container">
           <div className="section-title text-center">
             <h1 className="pt-4">Get in Touch</h1>
@@ -105,7 +105,7 @@ const Contact = () => {
           </div>
           <div className="d-sm-center d-md-NORMAL">
             <div className="row">
-              <div className="col-lg-8 px-lg-5">
+              <div className="col-lg-8 px-4">
                 <div className="contact">
                   <form
                     ref={formRef}
@@ -126,7 +126,7 @@ const Contact = () => {
                           required
                         />
                       </div>
-                      <div className="form-group col-md-6 pb-sm-3">
+                      <div className="form-group col-md-6 mb-3">
                         <input
                           type="email"
                           name="email"
