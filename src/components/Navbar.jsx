@@ -69,8 +69,13 @@ function NavbarComponent() {
               <br />
             </a>
             <div className="text-center">
-              <FontAwesomeIcon className="mr-2" icon={faPhone} />
-              <span className="px-2">07944162191</span>
+              <a
+                href="tel:07944162191"
+                style={{ color: "black", textDecoration: "none" }}
+              >
+                <FontAwesomeIcon className="mr-2" icon={faPhone} />
+                <span className="px-2">07944162191</span>
+              </a>
             </div>
           </div>
         </div>
@@ -82,15 +87,30 @@ function NavbarComponent() {
           <div className="d-none d-lg-block ml-lg-3">
             <a
               href="mailto:info@adbluesolution.co.uk"
-              style={{ color: "black", textDecoration: "none" }}
+              style={{
+                color: "black",
+                textDecoration: "none",
+                display: "inline-flex",
+                alignItems: "center",
+              }}
             >
               <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
               <span className="px-2" style={{ marginRight: "10px" }}>
                 info@adbluesolution.co.uk
               </span>
             </a>
-            <FontAwesomeIcon className="mr-2" icon={faPhone} />
-            <span className="px-2">07944162191</span>
+            <a
+              href="tel:07944162191"
+              style={{
+                color: "black",
+                textDecoration: "none",
+                display: "inline-flex",
+                alignItems: "center",
+              }}
+            >
+              <FontAwesomeIcon className="mr-2" icon={faPhone} />
+              <span className="px-2">07944162191</span>
+            </a>
           </div>
         </div>
       </div>
