@@ -97,7 +97,7 @@ const ReviewsList = () => {
                 See What Our Customers Had To Say
               </h2>
             </div>
-            <div className="col-md-6 d-flex justify-content-end align-items-center">
+            <div className="col-md-6 d-flex justify-content-end align-items-center pt-0 pb-3">
               <Button href="/reviewform">Write Review</Button>
             </div>
           </div>
