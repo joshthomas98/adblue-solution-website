@@ -125,7 +125,7 @@ const Homepage = () => {
                 </h2>
                 <p className="pb-1">
                   Look no further than Adblue Solution for a trustworthy AdBlue
-                  removal service right in your neighborhood! Our team of
+                  removal service right in your neighbourhood! Our team of
                   certified AdBlue delete specialists are dedicated to providing
                   top-notch service at unbeatable prices. Plus, with our
                   convenient mobile service, we'll come to you wherever you are!
@@ -135,15 +135,16 @@ const Homepage = () => {
                 </p>
                 <p className="pb-1">
                   To have the procedure reversed starts at £100 for OBD and £140
-                  for bench works plus traveling depending on location from the
+                  for bench works plus travelling depending on location from the
                   base.
                 </p>
                 <p className="pb-1">
                   Trust Adblue Solution for reliable AdBlue removal right in
-                  your neighborhood! Our certified specialists provide top-notch
-                  service at unbeatable prices, with the added convenience of
-                  our mobile service – we come to you!
+                  your neighbourhood! Our certified specialists provide
+                  top-notch service at unbeatable prices, with the added
+                  convenience of our mobile service – we come to you!
                 </p>
+
                 <Button href="/about">Find out more about us</Button>
               </div>
             </Col>
