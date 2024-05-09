@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const MessageSent = () => {
+  useEffect(() => {
+    // Instantly scroll to the top of the page
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <section className="mail-seccess section">

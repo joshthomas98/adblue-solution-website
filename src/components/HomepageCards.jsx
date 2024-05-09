@@ -7,7 +7,7 @@ const HomepageCards = ({ reviews }) => {
   const truncateReview = (review) => {
     const words = review.split(" ");
     if (words.length > 14) {
-      return words.slice(0, 12).join(" ") + "...";
+      return words.slice(0, 20).join(" ") + "...";
     }
     return review;
   };

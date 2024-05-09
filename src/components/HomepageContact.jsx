@@ -162,14 +162,16 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <div className="col-md-12 text-center">
-                  <Button
-                    type="submit"
-                    className="btn btn-contact-bg rounded-pill"
-                    style={{ maxWidth: "150px" }}
-                    disabled={formInvalid}
-                  >
-                    Send Message
-                  </Button>
+                  <a href="/messagesent">
+                    <Button
+                      type="submit"
+                      className="btn btn-contact-bg rounded-pill"
+                      style={{ maxWidth: "150px" }}
+                      disabled={formInvalid}
+                    >
+                      Send Message
+                    </Button>
+                  </a>
                 </div>
               </div>
             </form>
