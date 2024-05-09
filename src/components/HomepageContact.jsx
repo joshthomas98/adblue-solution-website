@@ -17,8 +17,8 @@ const Contact = () => {
     setIsLoading(true);
 
     emailjs
-      .sendForm("service_d38c8w8", "template_66mn5h7", formRef.current, {
-        publicKey: "JdEmvpiqWHQDGE7TP",
+      .sendForm("service_pxsno2o", "template_xruwh2x", formRef.current, {
+        publicKey: "L9c6wveJYmmMJUdax",
       })
       .then(
         () => {
