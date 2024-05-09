@@ -240,11 +240,20 @@ const Contact = () => {
                 ) : (
                   <div>
                     <div className="single_address">
-                      <i className="fa fa-envelope" />
-                      <h4>Send your message</h4>
-                      <p>info@adbluesolution.co.uk</p>
+                      <a
+                        href="mailto:info@adbluesolution.co.uk"
+                        style={{ color: "black", textDecoration: "none" }}
+                      >
+                        <i className="fa fa-envelope" />
+                        <h4>Send your message</h4>
+                        <p>info@adbluesolution.co.uk</p>
+                      </a>
                     </div>
-                    <div className="single_address">
+                    <div
+                      className="single_address"
+                      onClick={handleCallButtonClick}
+                      style={{ cursor: "pointer" }}
+                    >
                       <i className="fa fa-phone" />
                       <h4>Call us on</h4>
                       <p>07944162191</p>
