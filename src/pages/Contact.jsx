@@ -16,7 +16,7 @@ const Contact = () => {
     setIsLoading(true);
     emailjs
       .sendForm("service_pxsno2o", "template_xruwh2x", formRef.current, {
-        publicKey: "PoFl8JIIIpAgKzI",
+        publicKey: "h-PoFl8JIIIpAgKzI",
       })
       .then(
         () => {
