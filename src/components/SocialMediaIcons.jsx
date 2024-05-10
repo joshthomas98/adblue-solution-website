@@ -14,7 +14,7 @@ const SocialMediaIcons = () => {
     <div className="footer_profile">
       <ul className="social-icons">
         <li>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="#">
             <FontAwesomeIcon icon={faFacebook} size={iconSize} />
           </a>
         </li>
