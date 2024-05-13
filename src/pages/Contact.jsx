@@ -213,16 +213,17 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
-                        <FontAwesomeIcon
-                          icon={faWhatsapp}
-                          className="fa-whatsapp"
-                        />
-                        <div className="whatsapp-text">
+                        <div className="d-flex flex-column align-items-center pt-1">
+                          <FontAwesomeIcon
+                            icon={faWhatsapp}
+                            className="fa-whatsapp"
+                            style={{ marginLeft: "15px" }}
+                          />
                           <h4 className="text-dark">Contact us on WhatsApp</h4>
-                          <p className="text-dark">
-                            https://wa.link/adbluesolution
-                          </p>
                         </div>
+                        <p className="text-dark">
+                          https://wa.link/adbluesolution
+                        </p>
                       </a>
                     </div>
                     <div className="single_address">
@@ -271,12 +272,10 @@ const Contact = () => {
                           icon={faWhatsapp}
                           className="fa-whatsapp"
                         />
-                        <div className="whatsapp-text">
-                          <h4 className="text-dark">Contact us on WhatsApp</h4>
-                          <p className="text-dark">
-                            https://wa.link/adbluesolution
-                          </p>
-                        </div>
+                        <h4 className="text-dark">Contact us on WhatsApp</h4>
+                        <p className="text-dark">
+                          https://wa.link/adbluesolution
+                        </p>
                       </a>
                     </div>
                     <div className="single_address">
