@@ -29,7 +29,7 @@ const Footer = () => {
                     <p className="mb-0">
                       Designed and built by <i className="lni-heart mr-1" />
                       <a className="ml-1" href="http://acorn.digital/">
-                        Tech Minds Consulting
+                        Acorn Digital
                       </a>
                     </p>
                   </div>
