@@ -34,10 +34,10 @@ const Footer = () => {
                     </p>
                   </div>
                 </Center>
-                {/* Footer Social Area*/}
+                {/* Footer Social Area
                 <Center className="pb-5 pb-sm-4 pb-md-5">
                   <SocialMediaIcons />
-                </Center>
+                </Center> */}
               </div>
             </div>
             {/* Single Widget*/}

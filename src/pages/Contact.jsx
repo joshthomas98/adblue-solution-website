@@ -4,6 +4,8 @@ import { Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import BasicSpinner from "../components/Spinner";
 import { useMediaQuery } from "@material-ui/core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -211,16 +213,16 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
-                        <div className="d-flex flex-column align-items-center pt-1">
-                          <i
-                            className="fa fa-whatsapp"
-                            style={{ marginLeft: "15px" }}
-                          />
+                        <FontAwesomeIcon
+                          icon={faWhatsapp}
+                          className="fa-whatsapp"
+                        />
+                        <div className="whatsapp-text">
                           <h4 className="text-dark">Contact us on WhatsApp</h4>
+                          <p className="text-dark">
+                            https://wa.link/adbluesolution
+                          </p>
                         </div>
-                        <p className="text-dark">
-                          https://wa.link/adbluesolution
-                        </p>
                       </a>
                     </div>
                     <div className="single_address">
@@ -265,11 +267,16 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
-                        <i className="fa fa-whatsapp" />
-                        <h4 className="text-dark">Contact us on WhatsApp</h4>
-                        <p className="text-dark">
-                          https://wa.link/adbluesolution
-                        </p>
+                        <FontAwesomeIcon
+                          icon={faWhatsapp}
+                          className="fa-whatsapp"
+                        />
+                        <div className="whatsapp-text">
+                          <h4 className="text-dark">Contact us on WhatsApp</h4>
+                          <p className="text-dark">
+                            https://wa.link/adbluesolution
+                          </p>
+                        </div>
                       </a>
                     </div>
                     <div className="single_address">
