@@ -210,7 +210,7 @@ const Contact = () => {
                       </div>
                       <p>07944162191</p>
                     </div>
-                    <div className="single_address pt-3">
+                    <div className="single_address pt-1">
                       <a
                         href="https://wa.link/adbluesolution"
                         target="_blank"
