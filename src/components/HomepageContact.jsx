@@ -1,39 +1,41 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button, Alert } from "react-bootstrap";
-import emailjs from "@emailjs/browser";
+import { Button } from "react-bootstrap";
 import BasicSpinner from "./Spinner";
+import axios from "axios";
 
-const Contact = () => {
+const HomepageContact = () => {
   const navigate = useNavigate();
   const formRef = useRef(null);
 
   const [isLoading, setIsLoading] = useState(false);
   const [formInvalid, setFormInvalid] = useState(true);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
     setIsLoading(true);
 
-    emailjs
-      .sendForm("service_pxsno2o", "template_xruwh2x", formRef.current, {
-        publicKey: "h-PoFl8JIIIpAgKzI",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          navigate("/messagesent");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      )
-      .finally(() => {
-        setIsLoading(false);
-        formRef.current.reset();
-        setFormInvalid(true); // Reset form validation state
-      });
+    try {
+      const formData = new FormData(formRef.current);
+      const response = await axios.post(
+        "https://formspree.io/f/xwpekayn",
+        formData
+      );
+
+      if (!response.data.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      console.log("Email sent successfully!");
+      navigate("/messagesent");
+    } catch (error) {
+      console.log("FAILED...", error);
+    } finally {
+      setIsLoading(false);
+      formRef.current.reset();
+      setFormInvalid(true); // Reset form validation state
+    }
   };
 
   const handleFormChange = () => {
@@ -162,16 +164,14 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <div className="col-md-12 text-center">
-                  <a href="/messagesent">
-                    <Button
-                      type="submit"
-                      className="btn btn-contact-bg rounded-pill"
-                      style={{ maxWidth: "150px" }}
-                      disabled={formInvalid}
-                    >
-                      Send Message
-                    </Button>
-                  </a>
+                  <Button
+                    type="submit"
+                    className="btn btn-contact-bg rounded-pill"
+                    style={{ maxWidth: "150px" }}
+                    disabled={formInvalid}
+                  >
+                    Send Message
+                  </Button>
                 </div>
               </div>
             </form>
@@ -182,4 +182,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default HomepageContact;

@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import emailjs from "@emailjs/browser";
 import BasicSpinner from "../components/Spinner";
 import { useMediaQuery } from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import axios from "axios";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -13,27 +13,31 @@ const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [formInvalid, setFormInvalid] = useState(true);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    emailjs
-      .sendForm("service_pxsno2o", "template_xruwh2x", formRef.current, {
-        publicKey: "h-PoFl8JIIIpAgKzI",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          navigate("/messagesent");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      )
-      .finally(() => {
-        setIsLoading(false);
-        formRef.current.reset();
-        setFormInvalid(true);
-      });
+
+    try {
+      const formData = new FormData(formRef.current);
+      const response = await axios.post(
+        "https://formspree.io/f/xvgpodlq",
+        formData
+      );
+
+      if (!response.data.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      console.log("Email sent successfully!");
+      navigate("/messagesent");
+
+      formRef.current.reset();
+      setFormInvalid(true);
+    } catch (error) {
+      console.error("Error sending email:", error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleFormChange = () => {
@@ -213,21 +217,19 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
-                        <div className="d-flex flex-column align-items-center pt-1">
-                          <FontAwesomeIcon
-                            icon={faWhatsapp}
-                            className="fa-whatsapp"
-                            style={{ marginLeft: "15px" }}
-                          />
-                          <h4 className="text-dark">Contact us on WhatsApp</h4>
-                        </div>
+                        <FontAwesomeIcon
+                          icon={faWhatsapp}
+                          className="fa-whatsapp"
+                          style={{ marginLeft: "15px" }}
+                        />
+                        <h4 className="text-dark">Contact us on WhatsApp</h4>
                         <p className="text-dark">
                           https://wa.link/adbluesolution
                         </p>
                       </a>
                     </div>
                     <div className="single_address">
-                      <div className="d-flex flex-column align-items-center pt-1">
+                      <div className="d-flex flex-column align-items-center">
                         <i
                           className="fa fa-clock-o"
                           style={{ marginLeft: "15px" }}

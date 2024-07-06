@@ -19,18 +19,18 @@ function NavbarComponent() {
   const linkStyle = {
     fontFamily: "'Red Hat Display', sans-serif",
     fontSize: "1.4rem",
-    whiteSpace: "nowrap", // Added this line to prevent wrapping
+    whiteSpace: "nowrap",
   };
 
   const whatsappContainerStyle = {
     position: "fixed",
-    bottom: "20px", // Adjust the bottom position as needed
-    right: "20px", // Adjust the right position as needed
-    zIndex: "9999", // Ensure it appears above other content
-    width: "75px", // Adjust the size as needed
-    height: "75px", // Adjust the size as needed
-    borderRadius: "50%", // Make it circular
-    backgroundColor: "#25d366", // WhatsApp green color
+    bottom: "20px",
+    right: "20px",
+    zIndex: "9999",
+    width: "75px",
+    height: "75px",
+    borderRadius: "50%",
+    backgroundColor: "#25d366",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -121,13 +121,45 @@ function NavbarComponent() {
         expand="lg"
         style={{ marginTop: "-4px" }}
       >
-        <Navbar.Brand href="/">
+        {/* Navbar Brand */}
+        <Navbar.Brand
+          href="/"
+          className="text-center mx-auto d-block d-sm-none pb-5"
+        >
           <img
             src="/assets/LOGO WHITE NO BG.png"
             alt="LOGO"
-            style={{ width: "50%", marginTop: "-25px" }}
+            style={{ width: "80%", marginTop: "-25px" }}
           />
         </Navbar.Brand>
+        <Navbar.Brand href="/" className="d-none d-sm-block pb-4">
+          <img
+            src="/assets/LOGO WHITE NO BG.png"
+            alt="LOGO"
+            style={{ width: "100%", marginTop: "-25px" }}
+          />
+        </Navbar.Brand>
+
+        {/* Centered July Offer Image */}
+        <div className="d-flex justify-content-center align-items-center w-100 mb-3 pt-sm-5 pt-lg-0">
+          <div
+            style={{
+              width: "60%",
+              marginTop: "-50px",
+              marginBottom: "-10px",
+              marginLeft: "50px",
+            }}
+          >
+            <img
+              src="/dist/assets/july-offer-removedbg.png"
+              alt="SALE"
+              className="w-75"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
+          </div>
+        </div>
+
+        {/* Navbar Toggle */}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           style={{
@@ -136,8 +168,9 @@ function NavbarComponent() {
             marginBottom: "10px",
           }}
         />
+        {/* Navbar Collapse */}
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto">
+          <Nav className="mx-auto pb-5">
             <Nav.Link href="/" style={linkStyle}>
               Home
             </Nav.Link>
