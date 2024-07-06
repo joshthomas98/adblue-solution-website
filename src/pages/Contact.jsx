@@ -210,19 +210,21 @@ const Contact = () => {
                       </div>
                       <p>07944162191</p>
                     </div>
-                    <div className="single_address">
+                    <div className="single_address pt-3">
                       <a
                         href="https://wa.link/adbluesolution"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
-                        <FontAwesomeIcon
-                          icon={faWhatsapp}
-                          className="fa-whatsapp"
-                          style={{ marginLeft: "15px" }}
-                        />
-                        <h4 className="text-dark">Contact us on WhatsApp</h4>
+                        <div className="d-flex flex-column align-items-center">
+                          <FontAwesomeIcon
+                            icon={faWhatsapp}
+                            className="fa-whatsapp"
+                            style={{ marginLeft: "15px" }}
+                          />
+                          <h4 className="text-dark">Contact us on WhatsApp</h4>
+                        </div>
                         <p className="text-dark">
                           https://wa.link/adbluesolution
                         </p>
