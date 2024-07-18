@@ -34,10 +34,10 @@ const servicesData = [
   },
   {
     id: 4,
-    name: "Adblue Delete",
-    shortDescription: "Increase vehicle performance by removing Adblue system.",
+    name: "ADBLUE - SCR OFF",
+    shortDescription: "Improve engine efficiency by removing Adblue system.",
     description:
-      "Adblue is a urea-based solution used in modern diesel engines to reduce nitrogen oxide emissions. Adblue delete involves disabling or removing the Adblue system, which can lead to increased emissions and may not comply with environmental regulations.",
+      "Deactivating the Adblue system's Selective Catalytic Reduction (SRC) function improves engine efficiency, reducing fuel consumption and emissions for a more eco-friendly and economical drive.",
     iconClass: "fas fa-times-circle",
   },
   {
