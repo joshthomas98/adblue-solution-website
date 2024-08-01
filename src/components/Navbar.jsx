@@ -151,7 +151,7 @@ function NavbarComponent() {
             }}
           >
             <img
-              src="/assets/july-offer-removedbg.png"
+              src="/assets/summer_offer_no_bg.png"
               alt="SALE"
               className="w-75"
               style={{ maxWidth: "100%", height: "auto" }}
