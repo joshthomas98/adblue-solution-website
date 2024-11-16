@@ -151,7 +151,7 @@ function NavbarComponent() {
             }}
           >
             <img
-              src="/assets/summer_offer_no_bg.png"
+              src="/assets/£200 Adblue Deletes.png"
               alt="SALE"
               className="w-75"
               style={{ maxWidth: "100%", height: "auto" }}
