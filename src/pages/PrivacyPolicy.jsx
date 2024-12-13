@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
         <Card.Body>
           <Card.Title>Privacy Policy</Card.Title>
           <Card.Text>
-            This Privacy Policy describes how Adblue Solution collects, uses,
+            This Privacy Policy describes how Allblue Solution collects, uses,
             and shares personal information of users of our website{" "}
             <a href="https://www.adbluesolution.co.uk">
               www.adbluesolution.co.uk

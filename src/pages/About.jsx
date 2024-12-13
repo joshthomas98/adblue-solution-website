@@ -19,37 +19,40 @@ const About = () => {
             <div className="col-md pt-4 pt-xs-2 pt-lg-4">
               <h2 className="pb-2">Who We Are</h2>
               <p className="lead">
-                Adblue Solution are a group of Adblue delete specialists based
+                Allblue Solution are a group of Adblue delete specialists based
                 throughout the UK.
               </p>
-              <p>
+              <p className="lead">
                 We only use technicians with a high level of experience and
                 expertise with an average of 18 years in the business, and we
                 only use the latest in ECU programming equipment (NO CHINESE
                 CLONES) and OUR software which is fully supported by the
                 software developers should we ever need it.
               </p>
-              <p>
+              <p className="lead">
                 We will do a full vehicle diagnostic scan to check all of the
                 cars software and modules so we have a full understanding of
                 what we are dealing with and know exactly what the issue is
                 before we carry out any work. So as a customer you can be rest
                 assured that you are in safe hands at all times.
               </p>
-              <p>
+              <p className="lead">
                 Our goal is to keep you on or get you back on the road without
                 any Adblue Issues, so our customers are always our top priority
                 and we won’t keep you waiting for days to get a confirmed
                 booking.
               </p>
-              <p>
+              <p className="lead">
                 We offer a complete ECU service, not just Adblue delete. For
                 more information please see our services page.
               </p>
-              <a href="/services" className="btn btn-light mt-3">
+              <a href="/services" className="btn btn-light">
                 <i
                   className="fa fa-chevron-right"
-                  style={{ marginRight: "10px" }}
+                  style={{
+                    marginRight: "10px",
+                    backgroundColor: "transparent",
+                  }}
                 ></i>
                 Find Out More
               </a>
@@ -70,9 +73,9 @@ const About = () => {
               />
             </div>
             <div className="col-md pt-2 px-3 pt-sm-0 pb-sm-2 px-sm-4 pt-md-4 py-lg-4">
-              <h2 className="pb-3">AdBlue Solution</h2>
+              <h2 className="pb-3">Allblue Solution</h2>
               <p>
-                At Adblue Solution, with over 15 years in the Engine ECU
+                At Allblue Solution, with over 15 years in the Engine ECU
                 Reprogramming business, we offer an AdBlue removal service that
                 is second to none, for both you and your vehicle. The best part?
                 Say goodbye to all those annoying warning lights and dashboard
@@ -81,11 +84,11 @@ const About = () => {
                 faults nagging at you.
               </p>
               <p>
-                Our Adblue Solution delete is undetectable at the MOT STATION.
+                Our Allblue Solution delete is undetectable at the MOT STATION.
               </p>
               <p>
                 But here's the thing: not all removals are created equal. That's
-                where Adblue Solution shines. We use only genuine specialized
+                where Allblue Solution shines. We use only genuine specialized
                 equipment and UK-based technology with in-house programmers to
                 ensure a safe and risk-free process for your vehicle. No
                 mechanical changes are usually necessary, although some sensors
@@ -93,12 +96,12 @@ const About = () => {
               </p>
               <p>
                 So why settle for anything less when you can trust the experts
-                at Adblue Solution to get the job done?
+                at Allblue Solution to get the job done?
               </p>
               <p>
                 Using our advanced software, we remove and disable the AdBlue
                 system, ensuring your vehicle operates normally without ever
-                needing an AdBlue refill again. With AdBlue Solution, you can
+                needing an AdBlue refill again. With Allblue Solution, you can
                 save money, boost power, and enjoy your vehicle without the
                 usual AdBlue inconveniences.
               </p>

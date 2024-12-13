@@ -127,14 +127,14 @@ function NavbarComponent() {
           className="text-center mx-auto d-block d-sm-none pb-5"
         >
           <img
-            src="/assets/LOGO WHITE NO BG.png"
+            src="/assets/LOGO WHITE NO BG 2.png"
             alt="LOGO"
             style={{ width: "80%", marginTop: "-25px" }}
           />
         </Navbar.Brand>
         <Navbar.Brand href="/" className="d-none d-sm-block pb-4">
           <img
-            src="/assets/LOGO WHITE NO BG.png"
+            src="/assets/LOGO WHITE NO BG 2.png"
             alt="LOGO"
             style={{ width: "100%", marginTop: "-25px" }}
           />

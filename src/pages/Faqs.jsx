@@ -10,10 +10,10 @@ const FaqAccordion = () => {
       <div className="d-flex justify-content-center pb-5">
         <Accordion className="w-75">
           <Accordion.Item eventKey="0">
-            <Accordion.Header>Who is Adblue Solution?</Accordion.Header>
+            <Accordion.Header>Who is Allblue Solution?</Accordion.Header>
             <Accordion.Body>
               <em>
-                Adblue Solution is a group of specialists in Adblue deletion
+                Allblue Solution is a group of specialists in Adblue deletion
                 based throughout the UK. With an average of 18 years of
                 experience, our technicians use the latest ECU programming
                 equipment and proprietary software to provide top-quality
@@ -34,7 +34,7 @@ const FaqAccordion = () => {
           </Accordion.Item>
           <Accordion.Item eventKey="2">
             <Accordion.Header>
-              How does Adblue Solution differ from others?
+              How does Allblue Solution differ from others?
             </Accordion.Header>
             <Accordion.Body>
               <em>
@@ -46,10 +46,10 @@ const FaqAccordion = () => {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3">
-            <Accordion.Header>Why choose Adblue Solution?</Accordion.Header>
+            <Accordion.Header>Why choose Allblue Solution?</Accordion.Header>
             <Accordion.Body>
               <em>
-                Choosing Adblue Solution guarantees a hassle-free experience.
+                Choosing Allblue Solution guarantees a hassle-free experience.
                 Our advanced software enables seamless Adblue system removal,
                 saving you money, boosting power, and eliminating the
                 inconveniences associated with Adblue refills.

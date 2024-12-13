@@ -18,7 +18,7 @@ const Footer = () => {
                 <Center>
                   <div className="footer-logo" />
                   <img
-                    src="/assets/LOGO WHITE NO BG.png"
+                    src="/assets/LOGO WHITE NO BG 2.png"
                     alt="LOGO"
                     className="w-75 mx-3 mb-4"
                   />
@@ -126,7 +126,7 @@ const Footer = () => {
           <div className="row">
             <div className="col">
               <p className="text-center mt-4">
-                &copy; {currentYear} AdBlue Solution. All rights reserved.
+                &copy; {currentYear} Allblue Solution. All rights reserved.
               </p>
             </div>
           </div>

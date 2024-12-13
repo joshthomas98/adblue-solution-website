@@ -68,7 +68,7 @@ const Homepage = () => {
                 background: "none",
               }}
             >
-              Welcome To Adblue Solution
+              Welcome To Allblue Solution
             </h1>
           </div>
 
@@ -124,7 +124,7 @@ const Homepage = () => {
                   Fully Mobile Service - We Come To You!
                 </h2>
                 <p className="pb-1">
-                  Look no further than Adblue Solution for a trustworthy AdBlue
+                  Look no further than Allblue Solution for a trustworthy AdBlue
                   removal service right in your neighbourhood! Our team of
                   certified AdBlue delete specialists are dedicated to providing
                   top-notch service at unbeatable prices. Plus, with our
@@ -139,7 +139,7 @@ const Homepage = () => {
                   base.
                 </p>
                 <p className="pb-1">
-                  Trust Adblue Solution for reliable AdBlue removal right in
+                  Trust Allblue Solution for reliable AdBlue removal right in
                   your neighbourhood! Our certified specialists provide
                   top-notch service at unbeatable prices, with the added
                   convenience of our mobile service – we come to you!
@@ -152,7 +152,7 @@ const Homepage = () => {
               <img
                 style={{ height: "auto", maxWidth: "100%" }}
                 className="img-fluid"
-                src="/assets/van man white background no slogan.png"
+                src="/assets/van_man_white_background_no_slogan_2-removebg-preview.png"
                 alt=""
               />
             </Col>
@@ -203,7 +203,7 @@ const Homepage = () => {
                 multiple vehicle bookings.
               </p>
               <p>
-                At Adblue Solution, we are dedicated to providing AdBlue
+                At Allblue Solution, we are dedicated to providing AdBlue
                 solutions to customers across a wide geographic area. Our
                 comprehensive coverage ensures that, no matter where you are,
                 you can access the high-quality products and services you need
@@ -213,8 +213,8 @@ const Homepage = () => {
                 With a focus on reliability and professionalism, our
                 comprehensive coverage guarantees access to premium products and
                 services essential for maintaining the smooth operation of your
-                vehicles. Count on Adblue Solution to be your trusted partner in
-                keeping your fleet running efficiently and responsibly.
+                vehicles. Count on Allblue Solution to be your trusted partner
+                in keeping your fleet running efficiently and responsibly.
               </p>
             </Container>
             <p className="lead pt-3" style={{ fontWeight: "bold" }}>

@@ -8,27 +8,27 @@ const TermsAndConditions = () => {
       <div className="px-2 ">
         <p>
           These terms and conditions outline the rules and regulations for the
-          use of AdBlue Solution's Website, located at www.adbluesolution.com.
+          use of Allblue Solution's Website, located at www.adbluesolution.com.
         </p>
         <p>
           By accessing this website we assume you accept these terms and
-          conditions. Do not continue to use AdBlue Solution if you do not agree
-          to accept all of the terms and conditions stated on this page.
+          conditions. Do not continue to use Allblue Solution if you do not
+          agree to accept all of the terms and conditions stated on this page.
         </p>
         <h3>License</h3>
         <p>
-          Unless otherwise stated, AdBlue Solution and/or its licensors own the
-          intellectual property rights for all material on AdBlue Solution. All
+          Unless otherwise stated, Allblue Solution and/or its licensors own the
+          intellectual property rights for all material on Allblue Solution. All
           intellectual property rights are reserved. You may access this from
-          AdBlue Solution for your own personal use subjected to restrictions
+          Allblue Solution for your own personal use subjected to restrictions
           set in these terms and conditions.
         </p>
         <p>You must not:</p>
         <ul>
-          <li>Republish material from AdBlue Solution</li>
-          <li>Sell, rent or sub-license material from AdBlue Solution</li>
-          <li>Reproduce, duplicate or copy material from AdBlue Solution</li>
-          <li>Redistribute content from AdBlue Solution</li>
+          <li>Republish material from Allblue Solution</li>
+          <li>Sell, rent or sub-license material from Allblue Solution</li>
+          <li>Reproduce, duplicate or copy material from Allblue Solution</li>
+          <li>Redistribute content from Allblue Solution</li>
         </ul>
         <h3>Contact Information</h3>
         <p>
