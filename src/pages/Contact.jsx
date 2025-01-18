@@ -183,17 +183,21 @@ const Contact = () => {
                   <div className="d-sm-flex flex-column align-items-center justify-content-center justify-content-lg-start text-center">
                     <div className="single_address pt-4">
                       <a
-                        href="mailto:info@adbluesolution.co.uk"
+                        href="mailto:info@allbluesolution.co.uk"
                         style={{ color: "black", textDecoration: "none" }}
                       >
                         <div className="d-flex flex-column align-items-center">
                           <i
                             className="fa fa-envelope"
-                            style={{ marginLeft: "15px", marginTop: "-20px" }}
+                            style={{
+                              marginLeft: "15px",
+                              marginTop: "-20px",
+                              fontSize: "30px",
+                            }}
                           />
                           <h4>Send your message</h4>
                         </div>
-                        <p>info@adbluesolution.co.uk</p>
+                        <p>info@allbluesolution.co.uk</p>
                       </a>
                     </div>
                     <div
@@ -204,7 +208,7 @@ const Contact = () => {
                       <div className="d-flex flex-column align-items-center">
                         <i
                           className="fa fa-phone"
-                          style={{ marginLeft: "15px" }}
+                          style={{ marginLeft: "15px", fontSize: "35px" }}
                         />
                         <h4>Call us on</h4>
                       </div>
@@ -212,7 +216,7 @@ const Contact = () => {
                     </div>
                     <div className="single_address pt-1">
                       <a
-                        href="https://wa.link/adbluesolution"
+                        href="https://wa.link/allbluesolution"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none", color: "inherit" }}
@@ -226,7 +230,7 @@ const Contact = () => {
                           <h4 className="text-dark">Contact us on WhatsApp</h4>
                         </div>
                         <p className="text-dark">
-                          https://wa.link/adbluesolution
+                          https://wa.link/allbluesolution
                         </p>
                       </a>
                     </div>
@@ -234,7 +238,7 @@ const Contact = () => {
                       <div className="d-flex flex-column align-items-center">
                         <i
                           className="fa fa-clock-o"
-                          style={{ marginLeft: "15px" }}
+                          style={{ fontSize: "40px" }}
                         />
                         <h4>Work Time</h4>
                       </div>
@@ -248,12 +252,15 @@ const Contact = () => {
                   <div>
                     <div className="single_address">
                       <a
-                        href="mailto:info@adbluesolution.co.uk"
+                        href="mailto:info@allbluesolution.co.uk"
                         style={{ color: "black", textDecoration: "none" }}
                       >
-                        <i className="fa fa-envelope" />
+                        <i
+                          className="fa fa-envelope"
+                          style={{ fontSize: "30px" }}
+                        />
                         <h4>Send your message</h4>
-                        <p>info@adbluesolution.co.uk</p>
+                        <p>info@allbluesolution.co.uk</p>
                       </a>
                     </div>
                     <div
@@ -261,7 +268,7 @@ const Contact = () => {
                       onClick={handleCallButtonClick}
                       style={{ cursor: "pointer" }}
                     >
-                      <i className="fa fa-phone" />
+                      <i className="fa fa-phone" style={{ fontSize: "30px" }} />
                       <h4>Call us on</h4>
                       <p>07944162191</p>
                     </div>
@@ -283,7 +290,10 @@ const Contact = () => {
                       </a>
                     </div>
                     <div className="single_address">
-                      <i className="fa fa-clock-o" />
+                      <i
+                        className="fa fa-clock-o"
+                        style={{ fontSize: "38px" }}
+                      />
                       <h4>Work Time</h4>
                       <p>
                         Mon - Fri: 09.00 - 17.00. <br />

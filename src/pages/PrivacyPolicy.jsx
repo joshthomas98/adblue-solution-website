@@ -10,8 +10,8 @@ const PrivacyPolicy = () => {
           <Card.Text>
             This Privacy Policy describes how Allblue Solution collects, uses,
             and shares personal information of users of our website{" "}
-            <a href="https://www.adbluesolution.co.uk">
-              www.adbluesolution.co.uk
+            <a href="https://www.allbluesolution.co.uk">
+              www.allbluesolution.co.uk
             </a>
             .
           </Card.Text>
@@ -44,7 +44,7 @@ const PrivacyPolicy = () => {
           <Card.Text>
             If you have any questions about this Privacy Policy, please contact
             us at{" "}
-            <a href="mailto:contact@email.com">info@adbluesolution.co.uk</a>.
+            <a href="mailto:contact@email.com">info@allbluesolution.co.uk</a>.
           </Card.Text>
         </Card.Body>
       </Card>

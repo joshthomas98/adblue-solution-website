@@ -59,12 +59,12 @@ function NavbarComponent() {
         >
           <div className="d-lg-none ml-lg-3">
             <a
-              href="mailto:info@adbluesolution.co.uk"
+              href="mailto:info@allbluesolution.co.uk"
               style={{ color: "black", textDecoration: "none" }}
             >
               <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
               <span className="px-2" style={{ marginRight: "10px" }}>
-                info@adbluesolution.co.uk
+                info@allbluesolution.co.uk
               </span>
               <br />
             </a>
@@ -86,7 +86,7 @@ function NavbarComponent() {
         >
           <div className="d-none d-lg-block ml-lg-3">
             <a
-              href="mailto:info@adbluesolution.co.uk"
+              href="mailto:info@allbluesolution.co.uk"
               style={{
                 color: "black",
                 textDecoration: "none",
@@ -96,7 +96,7 @@ function NavbarComponent() {
             >
               <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
               <span className="px-2" style={{ marginRight: "10px" }}>
-                info@adbluesolution.co.uk
+                info@allbluesolution.co.uk
               </span>
             </a>
             <a

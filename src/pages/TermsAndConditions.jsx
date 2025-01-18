@@ -8,7 +8,8 @@ const TermsAndConditions = () => {
       <div className="px-2 ">
         <p>
           These terms and conditions outline the rules and regulations for the
-          use of Allblue Solution's Website, located at www.adbluesolution.com.
+          use of Allblue Solution's Website, located at
+          www.allbluesolution.co.uk.
         </p>
         <p>
           By accessing this website we assume you accept these terms and
